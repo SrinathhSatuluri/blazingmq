@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a88c3924f43e4d324c7824a44cbff1cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb076232b2c8907c9f5a2f89bc9db63" id="r_a1bb076232b2c8907c9f5a2f89bc9db63"><td class="memItemLeft" align="right" valign="top">const bdlbb::Blob &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1ConfirmEventBuilder.html#a1bb076232b2c8907c9f5a2f89bc9db63">blob</a> () const</td></tr>
 <tr class="separator:a1bb076232b2c8907c9f5a2f89bc9db63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2fb0333873fb9509944b6f8d3e2e29" id="r_abb2fb0333873fb9509944b6f8d3e2e29"><td class="memItemLeft" align="right" valign="top">const bsl::shared_ptr&lt; bdlbb::Blob &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1ConfirmEventBuilder.html#abb2fb0333873fb9509944b6f8d3e2e29">sharedBlob</a> () const</td></tr>
+<tr class="separator:abb2fb0333873fb9509944b6f8d3e2e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa055883046a7e1b0cd7c6845aeda9418" name="aa055883046a7e1b0cd7c6845aeda9418"></a>
@@ -265,6 +267,23 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Return a reference not offering modifiable access to the blob of confirmation messages batch built by this builder. If no messages were added, this will return an empty blob, i.e., a blob with <code>length == 0</code>. Behavior is undefined unless this instance was obtained using <code><a class="el" href="classBloombergLP_1_1bmqa_1_1Session.html#abca93f6985e118cdb84d192f03fd563b">bmqa::Session::loadConfirmEventBuilder</a></code>. </p>
+
+</div>
+</div>
+<a id="abb2fb0333873fb9509944b6f8d3e2e29" name="abb2fb0333873fb9509944b6f8d3e2e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2fb0333873fb9509944b6f8d3e2e29">&#9670;&#160;</a></span>sharedBlob()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bsl::shared_ptr&lt; bdlbb::Blob &gt; &amp; BloombergLP::bmqa::ConfirmEventBuilder::sharedBlob </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

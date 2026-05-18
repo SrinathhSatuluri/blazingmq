@@ -20,7 +20,9 @@ var structBloombergLP_1_1bmqt_1_1SessionEventType =
       [ "e_HOST_UNHEALTHY", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a22b8ec9ebdb85944ae1640e5a1496ca8", null ],
       [ "e_HOST_HEALTH_RESTORED", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a89a37ee34957385cdd056978182c831d", null ],
       [ "e_QUEUE_SUSPENDED", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a1c77d3dd86d383b795a945ecc123fa86", null ],
-      [ "e_QUEUE_RESUMED", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a673871da070c26105fe5eb41ced493bc", null ]
+      [ "e_QUEUE_RESUMED", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a673871da070c26105fe5eb41ced493bc", null ],
+      [ "e_CHANNEL_LOW_WATERMARK", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431aed4ac5e2a0c5f5abb6e1c7ed54f98a11", null ],
+      [ "e_CHANNEL_HIGH_WATERMARK", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a48ba758c0a5ad1cbcf2c931d0206c04f", null ]
     ] ],
     [ "print", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#a8d400440e939c43a595d77f857914fda", null ],
     [ "toAscii", "structBloombergLP_1_1bmqt_1_1SessionEventType.html#afe17e8eb14a06a78a50673c6dd13aecd", null ],

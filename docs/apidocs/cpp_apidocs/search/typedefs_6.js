@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['subscriptionssnapshot_0',['SubscriptionsSnapshot',['../classBloombergLP_1_1bmqt_1_1QueueOptions.html#ade59e8ce3ed6832982b2cf97309851a4',1,'BloombergLP::bmqt::QueueOptions']]]
+  ['result_5ftype_0',['result_type',['../classBloombergLP_1_1bmqt_1_1MessageGUIDHashAlgo.html#aa7bc4ffa07d9eb292f692828d13a3592',1,'BloombergLP::bmqt::MessageGUIDHashAlgo']]]
 ];

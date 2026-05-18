@@ -3,7 +3,7 @@ var searchData=
   ['id_0',['id',['../classBloombergLP_1_1bmqt_1_1Uri.html#aab4bda679018608e51342242523ac99d',1,'BloombergLP::bmqt::Uri::id()'],['../classBloombergLP_1_1bmqt_1_1SubscriptionHandle.html#a7b4bd8e74e64a31d65875f795097942e',1,'BloombergLP::bmqt::SubscriptionHandle::id()']]],
   ['in_20a_20message_20event_1',['Example 2 - Packing multiple messages in a message event',['../bmqa__messageeventbuilder_8h.html#bmqa_messageeventbuilder_ex2',1,'']]],
   ['in_20asynchronous_20mode_2',['Creating a mock session in asynchronous mode',['../bmqa__mocksession_8h.html#bmqa_mocksession_creating',1,'']]],
-  ['initialize_3',['initialize',['../classBloombergLP_1_1bmqa_1_1MockSession.html#a1d378132c9856fa9b1d0176bf892ec57',1,'BloombergLP::bmqa::MockSession::initialize()'],['../structBloombergLP_1_1bmqt_1_1UriParser.html#a59d72951a47f4eb568c348b0780688eb',1,'BloombergLP::bmqt::UriParser::initialize()']]],
+  ['initialize_3',['initialize',['../classBloombergLP_1_1bmqa_1_1MockSession.html#a1d378132c9856fa9b1d0176bf892ec57',1,'BloombergLP::bmqa::MockSession::initialize()'],['../structBloombergLP_1_1bmqt_1_1UriParser.html#a5b056cca6c0f2507e16dc60170a26788',1,'BloombergLP::bmqt::UriParser::initialize()']]],
   ['isack_4',['isAck',['../structBloombergLP_1_1bmqt_1_1QueueFlagsUtil.html#a6ca281254b3241b4a1c76b4e801bbac7',1,'BloombergLP::bmqt::QueueFlagsUtil']]],
   ['isadmin_5',['isAdmin',['../structBloombergLP_1_1bmqt_1_1QueueFlagsUtil.html#a90ae418b29f8a822346239954b282399',1,'BloombergLP::bmqt::QueueFlagsUtil']]],
   ['isautovalue_6',['isAutoValue',['../classBloombergLP_1_1bmqt_1_1CorrelationId.html#ab7c164f05b3e94d74a485859b8f2f5f6',1,'BloombergLP::bmqt::CorrelationId']]],

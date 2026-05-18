@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -112,103 +112,106 @@ $(document).ready(function(){initNavTree('bmqa__messageeventbuilder_8h_source.ht
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// See the License for the specific language governing permissions and</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// limitations under the License.</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// bmqa_messageeventbuilder.h                                         -*-C++-*-</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef INCLUDED_BMQA_MESSAGEEVENTBUILDER</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define INCLUDED_BMQA_MESSAGEEVENTBUILDER</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// Clang-format warns about an overlong line in this comment, which gives a</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Markdown anchor to a header.  Unfortunately, by Markdown syntax rules, this</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// has to on the same line as the header, meaning we cannot introduce a</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// line-break here.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">// BMQ</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#include &lt;<a class="code" href="bmqa__message_8h.html">bmqa_message.h</a>&gt;</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#include &lt;<a class="code" href="bmqa__messageevent_8h.html">bmqa_messageevent.h</a>&gt;</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#include &lt;<a class="code" href="bmqt__resultcode_8h.html">bmqt_resultcode.h</a>&gt;</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">// BDE</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#include &lt;bsl_memory.h&gt;</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBloombergLP.html">BloombergLP</a> {</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">// FORWARD DECLARATION</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">namespace </span>bmqa {</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="keyword">class </span>QueueId;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>}</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="keyword">namespace </span>bmqp {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="keyword">class </span>MessageGUIDGenerator;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>}</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="keyword">namespace </span>bmqa {</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">// ==============================</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">// struct MessageEventBuilderImpl</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">// ==============================</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">struct </span>MessageEventBuilderImpl {</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="comment">// PUBLIC DATA</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    MessageEvent d_msgEvent;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    Message d_msg;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="comment">// GUID generator object.</span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    bsl::shared_ptr&lt;bmqp::MessageGUIDGenerator&gt; d_guidGenerator_sp;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordtype">int</span> d_messageCountFinal;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="keywordtype">int</span> d_messageEventSizeFinal;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef INCLUDED_BMQA_MESSAGEEVENTBUILDER</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define INCLUDED_BMQA_MESSAGEEVENTBUILDER</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Clang-format warns about an overlong line in this comment, which gives a</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// Markdown anchor to a header.  Unfortunately, by Markdown syntax rules, this</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// has to on the same line as the header, meaning we cannot introduce a</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// line-break here.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">// BMQ</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">#include &lt;<a class="code" href="bmqa__message_8h.html">bmqa_message.h</a>&gt;</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#include &lt;<a class="code" href="bmqa__messageevent_8h.html">bmqa_messageevent.h</a>&gt;</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#include &lt;<a class="code" href="bmqt__resultcode_8h.html">bmqt_resultcode.h</a>&gt;</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">// BDE</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#include &lt;bsl_memory.h&gt;</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBloombergLP.html">BloombergLP</a> {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">// FORWARD DECLARATION</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="keyword">namespace </span>bmqa {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">class </span>QueueId;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="keyword">namespace </span>bmqp {</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="keyword">class </span>MessageGUIDGenerator;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keyword">namespace </span>bmqa {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">// ==============================</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">// struct MessageEventBuilderImpl</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">// ==============================</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="keyword">struct </span>MessageEventBuilderImpl {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="comment">// PUBLIC DATA</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">typedef</span> bsl::function&lt;MessageEvent()&gt; MessageEventFactory;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    MessageEvent d_msgEvent;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    Message d_msg;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="comment">// GUID generator object.</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    bsl::shared_ptr&lt;bmqp::MessageGUIDGenerator&gt; d_guidGenerator_sp;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">int</span> d_messageCountFinal;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <span class="keywordtype">int</span> d_messageEventSizeFinal;</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">// =========================</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">// class MessageEventBuilder</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment">// =========================</span></div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="foldopen" id="foldopen00319" data-start="{" data-end="};">
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html">  319</a></span><span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html">MessageEventBuilder</a> {</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="comment">// DATA</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    MessageEventBuilderImpl d_impl;  <span class="comment">// Impl</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="comment">// CREATORS</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    MessageEventFactory d_messageEventFactory;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>};</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">// =========================</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment">// class MessageEventBuilder</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment">// =========================</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="foldopen" id="foldopen00322" data-start="{" data-end="};">
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html">  322</a></span><span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html">MessageEventBuilder</a> {</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="comment">// DATA</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    MessageEventBuilderImpl d_impl;  <span class="comment">// Impl</span></div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a1242fc08713985ce364773423d0331c7">  330</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a1242fc08713985ce364773423d0331c7">MessageEventBuilder</a>();</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="comment">// MANIPULATORS</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a07e65835be05c0dc4e5d653f471738bd">  339</a></span>    <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1Message.html">Message</a>&amp; <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a07e65835be05c0dc4e5d653f471738bd">startMessage</a>();</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a434abd51be733b1410de56faa256f9a4">  354</a></span>    <a class="code hl_enumeration" href="structBloombergLP_1_1bmqt_1_1EventBuilderResult.html#a35b44c4ec533f5dc5fc7f8205569ccb0">bmqt::EventBuilderResult::Enum</a> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a434abd51be733b1410de56faa256f9a4">packMessage</a>(<span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1QueueId.html">bmqa::QueueId</a>&amp; queueId);</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a12f61310671544ae0d292cf3a12e4589">  358</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a12f61310671544ae0d292cf3a12e4589">reset</a>();</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#acc98b0ba08e65c0ef6c78cc3d199c90d">  365</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1MessageEvent.html">MessageEvent</a>&amp; <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#acc98b0ba08e65c0ef6c78cc3d199c90d">messageEvent</a>();</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa619a66b90b09f36c35f7e9cbb0fe7b5">  368</a></span>    <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1Message.html">Message</a>&amp; <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa619a66b90b09f36c35f7e9cbb0fe7b5">currentMessage</a>();</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="comment">// CREATORS</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a1242fc08713985ce364773423d0331c7">  333</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a1242fc08713985ce364773423d0331c7">MessageEventBuilder</a>();</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="comment">// MANIPULATORS</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a07e65835be05c0dc4e5d653f471738bd">  342</a></span>    <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1Message.html">Message</a>&amp; <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a07e65835be05c0dc4e5d653f471738bd">startMessage</a>();</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a434abd51be733b1410de56faa256f9a4">  357</a></span>    <a class="code hl_enumeration" href="structBloombergLP_1_1bmqt_1_1EventBuilderResult.html#a35b44c4ec533f5dc5fc7f8205569ccb0">bmqt::EventBuilderResult::Enum</a> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a434abd51be733b1410de56faa256f9a4">packMessage</a>(<span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1QueueId.html">bmqa::QueueId</a>&amp; queueId);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a12f61310671544ae0d292cf3a12e4589">  361</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a12f61310671544ae0d292cf3a12e4589">reset</a>();</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#acc98b0ba08e65c0ef6c78cc3d199c90d">  368</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1MessageEvent.html">MessageEvent</a>&amp; <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#acc98b0ba08e65c0ef6c78cc3d199c90d">messageEvent</a>();</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="comment">// ACCESSORS</span></div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa49a21b069e5ee46fe1f74e694dcdd32">  374</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa49a21b069e5ee46fe1f74e694dcdd32">messageCount</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a9be529580cbd4e867b5decc1cad4ae75">  380</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a9be529580cbd4e867b5decc1cad4ae75">messageEventSize</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>};</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa619a66b90b09f36c35f7e9cbb0fe7b5">  371</a></span>    <a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1Message.html">Message</a>&amp; <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa619a66b90b09f36c35f7e9cbb0fe7b5">currentMessage</a>();</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="comment">// ACCESSORS</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa49a21b069e5ee46fe1f74e694dcdd32">  377</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa49a21b069e5ee46fe1f74e694dcdd32">messageCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a9be529580cbd4e867b5decc1cad4ae75">  383</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a9be529580cbd4e867b5decc1cad4ae75">messageEventSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>};</div>
 </div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>}  <span class="comment">// close package namespace</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>}  <span class="comment">// close enterprise namespace</span></div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>}  <span class="comment">// close package namespace</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>}  <span class="comment">// close enterprise namespace</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="abmqa__message_8h_html"><div class="ttname"><a href="bmqa__message_8h.html">bmqa_message.h</a></div><div class="ttdoc">Provide the application with a message data object.</div></div>
 <div class="ttc" id="abmqa__messageevent_8h_html"><div class="ttname"><a href="bmqa__messageevent_8h.html">bmqa_messageevent.h</a></div><div class="ttdoc">Provide the application with data event notifications.</div></div>
 <div class="ttc" id="abmqt__resultcode_8h_html"><div class="ttname"><a href="bmqt__resultcode_8h.html">bmqt_resultcode.h</a></div><div class="ttdoc">Provide enums for various publicly exposed result code.</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html">BloombergLP::bmqa::MessageEventBuilder</a></div><div class="ttdoc">A builder for MessageEvent objects.</div><div class="ttdef"><b>Definition</b> bmqa_messageeventbuilder.h:319</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html">BloombergLP::bmqa::MessageEventBuilder</a></div><div class="ttdoc">A builder for MessageEvent objects.</div><div class="ttdef"><b>Definition</b> bmqa_messageeventbuilder.h:322</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html_a07e65835be05c0dc4e5d653f471738bd"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a07e65835be05c0dc4e5d653f471738bd">BloombergLP::bmqa::MessageEventBuilder::startMessage</a></div><div class="ttdeci">Message &amp; startMessage()</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html_a1242fc08713985ce364773423d0331c7"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a1242fc08713985ce364773423d0331c7">BloombergLP::bmqa::MessageEventBuilder::MessageEventBuilder</a></div><div class="ttdeci">MessageEventBuilder()</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html_a12f61310671544ae0d292cf3a12e4589"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#a12f61310671544ae0d292cf3a12e4589">BloombergLP::bmqa::MessageEventBuilder::reset</a></div><div class="ttdeci">void reset()</div></div>
@@ -217,11 +220,11 @@ $(document).ready(function(){initNavTree('bmqa__messageeventbuilder_8h_source.ht
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html_aa49a21b069e5ee46fe1f74e694dcdd32"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa49a21b069e5ee46fe1f74e694dcdd32">BloombergLP::bmqa::MessageEventBuilder::messageCount</a></div><div class="ttdeci">int messageCount() const</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html_aa619a66b90b09f36c35f7e9cbb0fe7b5"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa619a66b90b09f36c35f7e9cbb0fe7b5">BloombergLP::bmqa::MessageEventBuilder::currentMessage</a></div><div class="ttdeci">Message &amp; currentMessage()</div><div class="ttdoc">Return a reference to the current message.</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEventBuilder_html_acc98b0ba08e65c0ef6c78cc3d199c90d"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#acc98b0ba08e65c0ef6c78cc3d199c90d">BloombergLP::bmqa::MessageEventBuilder::messageEvent</a></div><div class="ttdeci">const MessageEvent &amp; messageEvent()</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEvent_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEvent.html">BloombergLP::bmqa::MessageEvent</a></div><div class="ttdef"><b>Definition</b> bmqa_messageevent.h:64</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1Message_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1Message.html">BloombergLP::bmqa::Message</a></div><div class="ttdoc">A message sent/received to/from the BlazingMQ broker.</div><div class="ttdef"><b>Definition</b> bmqa_message.h:176</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1QueueId_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1QueueId.html">BloombergLP::bmqa::QueueId</a></div><div class="ttdoc">Value-semantic efficient identifier for a queue.</div><div class="ttdef"><b>Definition</b> bmqa_queueid.h:59</div></div>
-<div class="ttc" id="anamespaceBloombergLP_html"><div class="ttname"><a href="namespaceBloombergLP.html">BloombergLP</a></div><div class="ttdef"><b>Definition</b> bmqa_abstractsession.h:42</div></div>
-<div class="ttc" id="astructBloombergLP_1_1bmqt_1_1EventBuilderResult_html_a35b44c4ec533f5dc5fc7f8205569ccb0"><div class="ttname"><a href="structBloombergLP_1_1bmqt_1_1EventBuilderResult.html#a35b44c4ec533f5dc5fc7f8205569ccb0">BloombergLP::bmqt::EventBuilderResult::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> bmqt_resultcode.h:364</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1MessageEvent_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1MessageEvent.html">BloombergLP::bmqa::MessageEvent</a></div><div class="ttdef"><b>Definition</b> bmqa_messageevent.h:63</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1Message_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1Message.html">BloombergLP::bmqa::Message</a></div><div class="ttdoc">A message sent/received to/from the BlazingMQ broker.</div><div class="ttdef"><b>Definition</b> bmqa_message.h:175</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1QueueId_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1QueueId.html">BloombergLP::bmqa::QueueId</a></div><div class="ttdoc">Value-semantic efficient identifier for a queue.</div><div class="ttdef"><b>Definition</b> bmqa_queueid.h:58</div></div>
+<div class="ttc" id="anamespaceBloombergLP_html"><div class="ttname"><a href="namespaceBloombergLP.html">BloombergLP</a></div><div class="ttdef"><b>Definition</b> bmqa_abstractsession.h:41</div></div>
+<div class="ttc" id="astructBloombergLP_1_1bmqt_1_1EventBuilderResult_html_a35b44c4ec533f5dc5fc7f8205569ccb0"><div class="ttname"><a href="structBloombergLP_1_1bmqt_1_1EventBuilderResult.html#a35b44c4ec533f5dc5fc7f8205569ccb0">BloombergLP::bmqt::EventBuilderResult::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> bmqt_resultcode.h:361</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

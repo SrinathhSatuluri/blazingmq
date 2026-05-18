@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -90,8 +90,6 @@ $(document).ready(function(){initNavTree('classBloombergLP_1_1bmqa_1_1MessagePro
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classBloombergLP_1_1bmqa_1_1MessageProperties-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">BloombergLP::bmqa::MessageProperties Class Reference</div></div>
@@ -105,6 +103,7 @@ $(document).ready(function(){initNavTree('classBloombergLP_1_1bmqa_1_1MessagePro
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Creators</div></td></tr>
 <tr class="memitem:ad1dca09806678c6008488ae223fcc94e" id="r_ad1dca09806678c6008488ae223fcc94e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ad1dca09806678c6008488ae223fcc94e">MessageProperties</a> (bslma::Allocator *basicAllocator=0)</td></tr>
 <tr class="separator:ad1dca09806678c6008488ae223fcc94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab87df372a630369747507e4dfe9ec362" id="r_ab87df372a630369747507e4dfe9ec362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ab87df372a630369747507e4dfe9ec362">MessageProperties</a> (const <a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">MessageProperties</a> &amp;other, bslma::Allocator *basicAllocator=0)</td></tr>
@@ -112,75 +111,80 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a571682ace85bbb1fa6dec386dc2c8204" id="r_a571682ace85bbb1fa6dec386dc2c8204"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a571682ace85bbb1fa6dec386dc2c8204">~MessageProperties</a> ()</td></tr>
 <tr class="memdesc:a571682ace85bbb1fa6dec386dc2c8204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy this object.  <br /></td></tr>
 <tr class="separator:a571682ace85bbb1fa6dec386dc2c8204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Manipulators</div></td></tr>
 <tr class="memitem:a0bf164287924a0e4d56d1d45f8f28915" id="r_a0bf164287924a0e4d56d1d45f8f28915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">MessageProperties</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a0bf164287924a0e4d56d1d45f8f28915">operator=</a> (const <a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">MessageProperties</a> &amp;rhs)</td></tr>
 <tr class="memdesc:a0bf164287924a0e4d56d1d45f8f28915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign to this object the value of the specified <code>rhs</code> object.  <br /></td></tr>
 <tr class="separator:a0bf164287924a0e4d56d1d45f8f28915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84a491be58603c7376faf89b12812413" id="r_a84a491be58603c7376faf89b12812413"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a84a491be58603c7376faf89b12812413">remove</a> (const bsl::string &amp;name, <a class="el" href="structBloombergLP_1_1bmqt_1_1PropertyType.html#a38a96cd3ce3d7dc6ed902bd2192709bc">bmqt::PropertyType::Enum</a> *buffer=0)</td></tr>
-<tr class="separator:a84a491be58603c7376faf89b12812413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fab6ab36a31f3fd7adac0dd8853cc7" id="r_a64fab6ab36a31f3fd7adac0dd8853cc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a64fab6ab36a31f3fd7adac0dd8853cc7">remove</a> (bsl::string_view name, <a class="el" href="structBloombergLP_1_1bmqt_1_1PropertyType.html#a38a96cd3ce3d7dc6ed902bd2192709bc">bmqt::PropertyType::Enum</a> *buffer=0)</td></tr>
+<tr class="separator:a64fab6ab36a31f3fd7adac0dd8853cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2033ac4ba8c65e1fa30b98c1c678cdc9" id="r_a2033ac4ba8c65e1fa30b98c1c678cdc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a2033ac4ba8c65e1fa30b98c1c678cdc9">clear</a> ()</td></tr>
 <tr class="separator:a2033ac4ba8c65e1fa30b98c1c678cdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2d04e6ed0f30174ae70ef7247cf893a" id="r_ae2d04e6ed0f30174ae70ef7247cf893a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ae2d04e6ed0f30174ae70ef7247cf893a">setPropertyAsBool</a> (const bsl::string &amp;name, bool value)</td></tr>
-<tr class="separator:ae2d04e6ed0f30174ae70ef7247cf893a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac48392edb2e73c99d89936f198780335" id="r_ac48392edb2e73c99d89936f198780335"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ac48392edb2e73c99d89936f198780335">setPropertyAsChar</a> (const bsl::string &amp;name, char value)</td></tr>
-<tr class="separator:ac48392edb2e73c99d89936f198780335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39eb655cfed68d9e23aee4ab532d84fe" id="r_a39eb655cfed68d9e23aee4ab532d84fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a39eb655cfed68d9e23aee4ab532d84fe">setPropertyAsShort</a> (const bsl::string &amp;name, short value)</td></tr>
-<tr class="separator:a39eb655cfed68d9e23aee4ab532d84fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a51374949bd28ad72b327dac581134" id="r_ae6a51374949bd28ad72b327dac581134"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ae6a51374949bd28ad72b327dac581134">setPropertyAsInt32</a> (const bsl::string &amp;name, bsl::int32_t value)</td></tr>
-<tr class="separator:ae6a51374949bd28ad72b327dac581134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b8d6174f091e1b251bbd84026abf08e" id="r_a9b8d6174f091e1b251bbd84026abf08e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a9b8d6174f091e1b251bbd84026abf08e">setPropertyAsInt64</a> (const bsl::string &amp;name, bsls::Types::Int64 value)</td></tr>
-<tr class="separator:a9b8d6174f091e1b251bbd84026abf08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d235c38c25cc4d5e828c7e732e11389" id="r_a8d235c38c25cc4d5e828c7e732e11389"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a8d235c38c25cc4d5e828c7e732e11389">setPropertyAsString</a> (const bsl::string &amp;name, const bsl::string &amp;value)</td></tr>
-<tr class="separator:a8d235c38c25cc4d5e828c7e732e11389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41fcf5e1572fa4f3a97b9ee25e1e3ba" id="r_ab41fcf5e1572fa4f3a97b9ee25e1e3ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ab41fcf5e1572fa4f3a97b9ee25e1e3ba">setPropertyAsBinary</a> (const bsl::string &amp;name, const bsl::vector&lt; char &gt; &amp;value)</td></tr>
-<tr class="separator:ab41fcf5e1572fa4f3a97b9ee25e1e3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde2dfd771240d5059c218b92765083b" id="r_acde2dfd771240d5059c218b92765083b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#acde2dfd771240d5059c218b92765083b">setPropertyAsBool</a> (bsl::string_view name, bool value)</td></tr>
+<tr class="separator:acde2dfd771240d5059c218b92765083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092164f190b3a486727ac5f3dfa74403" id="r_a092164f190b3a486727ac5f3dfa74403"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a092164f190b3a486727ac5f3dfa74403">setPropertyAsChar</a> (bsl::string_view name, char value)</td></tr>
+<tr class="separator:a092164f190b3a486727ac5f3dfa74403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92603885eed24dd1f85a3e6ccf9623a6" id="r_a92603885eed24dd1f85a3e6ccf9623a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a92603885eed24dd1f85a3e6ccf9623a6">setPropertyAsShort</a> (bsl::string_view name, short value)</td></tr>
+<tr class="separator:a92603885eed24dd1f85a3e6ccf9623a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab327f5728910ecdd6c8bd523e4453055" id="r_ab327f5728910ecdd6c8bd523e4453055"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ab327f5728910ecdd6c8bd523e4453055">setPropertyAsInt32</a> (bsl::string_view name, bsl::int32_t value)</td></tr>
+<tr class="separator:ab327f5728910ecdd6c8bd523e4453055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a93fc3227eb9ca533c5c3a6f754db4" id="r_ae7a93fc3227eb9ca533c5c3a6f754db4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ae7a93fc3227eb9ca533c5c3a6f754db4">setPropertyAsInt64</a> (bsl::string_view name, bsls::Types::Int64 value)</td></tr>
+<tr class="separator:ae7a93fc3227eb9ca533c5c3a6f754db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55ffcdfaee9ccb9e300fbcf3aa88980" id="r_af55ffcdfaee9ccb9e300fbcf3aa88980"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#af55ffcdfaee9ccb9e300fbcf3aa88980">setPropertyAsString</a> (bsl::string_view name, bsl::string_view value)</td></tr>
+<tr class="separator:af55ffcdfaee9ccb9e300fbcf3aa88980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6be318482583a6c91ef80f476f7e2da" id="r_af6be318482583a6c91ef80f476f7e2da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#af6be318482583a6c91ef80f476f7e2da">setPropertyAsBinary</a> (bsl::string_view name, bsl::span&lt; const char &gt; value)</td></tr>
+<tr class="separator:af6be318482583a6c91ef80f476f7e2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2e14e9819d20bbec614a597acaa430" id="r_aef2e14e9819d20bbec614a597acaa430"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#aef2e14e9819d20bbec614a597acaa430">streamIn</a> (const bdlbb::Blob &amp;blob)</td></tr>
 <tr class="separator:aef2e14e9819d20bbec614a597acaa430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Accessors</div></td></tr>
 <tr class="memitem:ac961ce665524adb0d29d8885451c1bfe" id="r_ac961ce665524adb0d29d8885451c1bfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ac961ce665524adb0d29d8885451c1bfe">numProperties</a> () const</td></tr>
 <tr class="memdesc:ac961ce665524adb0d29d8885451c1bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total number of properties set in this instance.  <br /></td></tr>
 <tr class="separator:ac961ce665524adb0d29d8885451c1bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba488eb47573415f771afb1e66a6dff5" id="r_aba488eb47573415f771afb1e66a6dff5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#aba488eb47573415f771afb1e66a6dff5">totalSize</a> () const</td></tr>
 <tr class="separator:aba488eb47573415f771afb1e66a6dff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad1410225c126541fde3da48f076088f" id="r_aad1410225c126541fde3da48f076088f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#aad1410225c126541fde3da48f076088f">hasProperty</a> (const bsl::string &amp;name, <a class="el" href="structBloombergLP_1_1bmqt_1_1PropertyType.html#a38a96cd3ce3d7dc6ed902bd2192709bc">bmqt::PropertyType::Enum</a> *type=0) const</td></tr>
-<tr class="separator:aad1410225c126541fde3da48f076088f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b634da4ea8e6b6837a9ec686b813513" id="r_a0b634da4ea8e6b6837a9ec686b813513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBloombergLP_1_1bmqt_1_1PropertyType.html#a38a96cd3ce3d7dc6ed902bd2192709bc">bmqt::PropertyType::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a0b634da4ea8e6b6837a9ec686b813513">propertyType</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:a0b634da4ea8e6b6837a9ec686b813513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a290d5828f112a33d3e66734cf5ed0b12" id="r_a290d5828f112a33d3e66734cf5ed0b12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a290d5828f112a33d3e66734cf5ed0b12">getPropertyAsBool</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:a290d5828f112a33d3e66734cf5ed0b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3500c067989d06fb6fd923cf5ea023e" id="r_ab3500c067989d06fb6fd923cf5ea023e"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ab3500c067989d06fb6fd923cf5ea023e">getPropertyAsChar</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:ab3500c067989d06fb6fd923cf5ea023e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4c262b5291f6e52238418bbac8522a" id="r_aac4c262b5291f6e52238418bbac8522a"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#aac4c262b5291f6e52238418bbac8522a">getPropertyAsShort</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:aac4c262b5291f6e52238418bbac8522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe96626890c431a96624bbf7b3917dd" id="r_a4fe96626890c431a96624bbf7b3917dd"><td class="memItemLeft" align="right" valign="top">bsl::int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a4fe96626890c431a96624bbf7b3917dd">getPropertyAsInt32</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:a4fe96626890c431a96624bbf7b3917dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2cbb3019eee045fe643874ce466f2a" id="r_a4e2cbb3019eee045fe643874ce466f2a"><td class="memItemLeft" align="right" valign="top">bsls::Types::Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a4e2cbb3019eee045fe643874ce466f2a">getPropertyAsInt64</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:a4e2cbb3019eee045fe643874ce466f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae13489d3b68de6026210850300486f56" id="r_ae13489d3b68de6026210850300486f56"><td class="memItemLeft" align="right" valign="top">const bsl::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ae13489d3b68de6026210850300486f56">getPropertyAsString</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:ae13489d3b68de6026210850300486f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67357d6c45d6f18bdc2a00b457d08e46" id="r_a67357d6c45d6f18bdc2a00b457d08e46"><td class="memItemLeft" align="right" valign="top">const bsl::vector&lt; char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a67357d6c45d6f18bdc2a00b457d08e46">getPropertyAsBinary</a> (const bsl::string &amp;name) const</td></tr>
-<tr class="separator:a67357d6c45d6f18bdc2a00b457d08e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae094d785ce7c2c62f558aed609cfe6e9" id="r_ae094d785ce7c2c62f558aed609cfe6e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ae094d785ce7c2c62f558aed609cfe6e9">getPropertyAsBoolOr</a> (const bsl::string &amp;name, bool value) const</td></tr>
-<tr class="separator:ae094d785ce7c2c62f558aed609cfe6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d362e48790eb0f624fc7030e22e52aa" id="r_a9d362e48790eb0f624fc7030e22e52aa"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a9d362e48790eb0f624fc7030e22e52aa">getPropertyAsCharOr</a> (const bsl::string &amp;name, char value) const</td></tr>
-<tr class="separator:a9d362e48790eb0f624fc7030e22e52aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bc257e36cd828b26f1cfd4a363b3d4f" id="r_a9bc257e36cd828b26f1cfd4a363b3d4f"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a9bc257e36cd828b26f1cfd4a363b3d4f">getPropertyAsShortOr</a> (const bsl::string &amp;name, short value) const</td></tr>
-<tr class="separator:a9bc257e36cd828b26f1cfd4a363b3d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af68b1cfd9cdff8891ae609c9ab85dbf3" id="r_af68b1cfd9cdff8891ae609c9ab85dbf3"><td class="memItemLeft" align="right" valign="top">bsl::int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#af68b1cfd9cdff8891ae609c9ab85dbf3">getPropertyAsInt32Or</a> (const bsl::string &amp;name, bsl::int32_t value) const</td></tr>
-<tr class="separator:af68b1cfd9cdff8891ae609c9ab85dbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a453d9dfc465056ae08dc53427f3a80e9" id="r_a453d9dfc465056ae08dc53427f3a80e9"><td class="memItemLeft" align="right" valign="top">bsls::Types::Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a453d9dfc465056ae08dc53427f3a80e9">getPropertyAsInt64Or</a> (const bsl::string &amp;name, bsls::Types::Int64 value) const</td></tr>
-<tr class="separator:a453d9dfc465056ae08dc53427f3a80e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2824bd9581488be8b3ec38f89f77ddac" id="r_a2824bd9581488be8b3ec38f89f77ddac"><td class="memItemLeft" align="right" valign="top">const bsl::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a2824bd9581488be8b3ec38f89f77ddac">getPropertyAsStringOr</a> (const bsl::string &amp;name, const bsl::string &amp;value) const</td></tr>
-<tr class="separator:a2824bd9581488be8b3ec38f89f77ddac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c3544b913a67fb8c6560b4bfd30835" id="r_a06c3544b913a67fb8c6560b4bfd30835"><td class="memItemLeft" align="right" valign="top">const bsl::vector&lt; char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a06c3544b913a67fb8c6560b4bfd30835">getPropertyAsBinaryOr</a> (const bsl::string &amp;name, const bsl::vector&lt; char &gt; &amp;value) const</td></tr>
-<tr class="separator:a06c3544b913a67fb8c6560b4bfd30835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15466f7b61ecc45726294b6b51d8635d" id="r_a15466f7b61ecc45726294b6b51d8635d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a15466f7b61ecc45726294b6b51d8635d">hasProperty</a> (bsl::string_view name, <a class="el" href="structBloombergLP_1_1bmqt_1_1PropertyType.html#a38a96cd3ce3d7dc6ed902bd2192709bc">bmqt::PropertyType::Enum</a> *type=0) const</td></tr>
+<tr class="separator:a15466f7b61ecc45726294b6b51d8635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9654ad8e173364bc093d71ba49ecc09a" id="r_a9654ad8e173364bc093d71ba49ecc09a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBloombergLP_1_1bmqt_1_1PropertyType.html#a38a96cd3ce3d7dc6ed902bd2192709bc">bmqt::PropertyType::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a9654ad8e173364bc093d71ba49ecc09a">propertyType</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:a9654ad8e173364bc093d71ba49ecc09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76f93ba7533ef74666ce9cd30a4c843" id="r_ae76f93ba7533ef74666ce9cd30a4c843"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ae76f93ba7533ef74666ce9cd30a4c843">getPropertyAsBool</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:ae76f93ba7533ef74666ce9cd30a4c843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2babacb0d85f48e13b656435799d1405" id="r_a2babacb0d85f48e13b656435799d1405"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a2babacb0d85f48e13b656435799d1405">getPropertyAsChar</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:a2babacb0d85f48e13b656435799d1405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b10d99e3fa06d95d327a33ee6655f2" id="r_aa8b10d99e3fa06d95d327a33ee6655f2"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#aa8b10d99e3fa06d95d327a33ee6655f2">getPropertyAsShort</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:aa8b10d99e3fa06d95d327a33ee6655f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce8b6e1170d03c06cabebd879657272" id="r_a3ce8b6e1170d03c06cabebd879657272"><td class="memItemLeft" align="right" valign="top">bsl::int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a3ce8b6e1170d03c06cabebd879657272">getPropertyAsInt32</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:a3ce8b6e1170d03c06cabebd879657272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bc2a1de509053b2ec91468b2c43e50" id="r_af4bc2a1de509053b2ec91468b2c43e50"><td class="memItemLeft" align="right" valign="top">bsls::Types::Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#af4bc2a1de509053b2ec91468b2c43e50">getPropertyAsInt64</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:af4bc2a1de509053b2ec91468b2c43e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313fea8b815e0b08f93736dcc43b7f18" id="r_a313fea8b815e0b08f93736dcc43b7f18"><td class="memItemLeft" align="right" valign="top">const bsl::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a313fea8b815e0b08f93736dcc43b7f18">getPropertyAsString</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:a313fea8b815e0b08f93736dcc43b7f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a01c2445247d9f83daf4bd0c1e04cb3" id="r_a8a01c2445247d9f83daf4bd0c1e04cb3"><td class="memItemLeft" align="right" valign="top">const bsl::vector&lt; char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a8a01c2445247d9f83daf4bd0c1e04cb3">getPropertyAsBinary</a> (bsl::string_view name) const</td></tr>
+<tr class="separator:a8a01c2445247d9f83daf4bd0c1e04cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995680da05ef1a9a0e2720cc1e634632" id="r_a995680da05ef1a9a0e2720cc1e634632"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a995680da05ef1a9a0e2720cc1e634632">getPropertyAsBoolOr</a> (bsl::string_view name, bool value) const</td></tr>
+<tr class="separator:a995680da05ef1a9a0e2720cc1e634632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664162511099d464892fd54062fc6add" id="r_a664162511099d464892fd54062fc6add"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a664162511099d464892fd54062fc6add">getPropertyAsCharOr</a> (bsl::string_view name, char value) const</td></tr>
+<tr class="separator:a664162511099d464892fd54062fc6add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af81f238fa4ec031372a726f235aa6b" id="r_a4af81f238fa4ec031372a726f235aa6b"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a4af81f238fa4ec031372a726f235aa6b">getPropertyAsShortOr</a> (bsl::string_view name, short value) const</td></tr>
+<tr class="separator:a4af81f238fa4ec031372a726f235aa6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7a3607cc6e9d36387ef986d0e00478" id="r_a2c7a3607cc6e9d36387ef986d0e00478"><td class="memItemLeft" align="right" valign="top">bsl::int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a2c7a3607cc6e9d36387ef986d0e00478">getPropertyAsInt32Or</a> (bsl::string_view name, bsl::int32_t value) const</td></tr>
+<tr class="separator:a2c7a3607cc6e9d36387ef986d0e00478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6fee6136512e6de21880f7759e21ba" id="r_a0f6fee6136512e6de21880f7759e21ba"><td class="memItemLeft" align="right" valign="top">bsls::Types::Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a0f6fee6136512e6de21880f7759e21ba">getPropertyAsInt64Or</a> (bsl::string_view name, bsls::Types::Int64 value) const</td></tr>
+<tr class="separator:a0f6fee6136512e6de21880f7759e21ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c99e18d6abe05ea78b4d701f465b34d" id="r_a9c99e18d6abe05ea78b4d701f465b34d"><td class="memItemLeft" align="right" valign="top">const bsl::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a9c99e18d6abe05ea78b4d701f465b34d">getPropertyAsStringOr</a> (bsl::string_view name, const bsl::string &amp;value) const</td></tr>
+<tr class="separator:a9c99e18d6abe05ea78b4d701f465b34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5944686e7acbac2b0505427eccb87e20" id="r_a5944686e7acbac2b0505427eccb87e20"><td class="memItemLeft" align="right" valign="top">const bsl::vector&lt; char &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a5944686e7acbac2b0505427eccb87e20">getPropertyAsBinaryOr</a> (bsl::string_view name, const bsl::vector&lt; char &gt; &amp;value) const</td></tr>
+<tr class="separator:a5944686e7acbac2b0505427eccb87e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d9d986605aa64eb14690a00ab706d77" id="r_a7d9d986605aa64eb14690a00ab706d77"><td class="memItemLeft" align="right" valign="top">const bdlbb::Blob &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a7d9d986605aa64eb14690a00ab706d77">streamOut</a> (bdlbb::BlobBufferFactory *bufferFactory) const</td></tr>
 <tr class="separator:a7d9d986605aa64eb14690a00ab706d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98d81ebda919b251634a7eb97084f354" id="r_a98d81ebda919b251634a7eb97084f354"><td class="memItemLeft" align="right" valign="top">bsl::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a98d81ebda919b251634a7eb97084f354">print</a> (bsl::ostream &amp;stream, int level=0, int spacesPerLevel=4) const</td></tr>
 <tr class="separator:a98d81ebda919b251634a7eb97084f354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ada34723c9fb0497789f1c6b697a42bc7" id="r_ada34723c9fb0497789f1c6b697a42bc7"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ada34723c9fb0497789f1c6b697a42bc7">MessagePropertiesIterator</a></td></tr>
+<tr class="separator:ada34723c9fb0497789f1c6b697a42bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Constants</h2></td></tr>
 <tr class="memitem:af5b6fa809c8a8d4395fb57dba8d2699d" id="r_af5b6fa809c8a8d4395fb57dba8d2699d"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#af5b6fa809c8a8d4395fb57dba8d2699d">k_MAX_NUM_PROPERTIES</a> = 255</td></tr>
-<tr class="memdesc:af5b6fa809c8a8d4395fb57dba8d2699d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of properties that can appear in a <code><a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html" title="A message sent/received to/from the BlazingMQ broker.">bmqa::Message</a></code>.  <br /></td></tr>
 <tr class="separator:af5b6fa809c8a8d4395fb57dba8d2699d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa511b28f58a4011682bc70b125b9645f" id="r_aa511b28f58a4011682bc70b125b9645f"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#aa511b28f58a4011682bc70b125b9645f">k_MAX_PROPERTIES_AREA_LENGTH</a> = (64 * 1024 * 1024) - 8</td></tr>
 <tr class="separator:aa511b28f58a4011682bc70b125b9645f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,11 +193,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:ad2011e8c4146f527b067cd76a2f3e249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25406a0e1824e86198df4dc5156b710f" id="r_a25406a0e1824e86198df4dc5156b710f"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#a25406a0e1824e86198df4dc5156b710f">k_MAX_PROPERTY_VALUE_LENGTH</a> = 67104745</td></tr>
 <tr class="separator:a25406a0e1824e86198df4dc5156b710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:ada34723c9fb0497789f1c6b697a42bc7" id="r_ada34723c9fb0497789f1c6b697a42bc7"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html#ada34723c9fb0497789f1c6b697a42bc7">MessagePropertiesIterator</a></td></tr>
-<tr class="separator:ada34723c9fb0497789f1c6b697a42bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad1dca09806678c6008488ae223fcc94e" name="ad1dca09806678c6008488ae223fcc94e"></a>
@@ -288,8 +287,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a84a491be58603c7376faf89b12812413" name="a84a491be58603c7376faf89b12812413"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84a491be58603c7376faf89b12812413">&#9670;&#160;</a></span>remove()</h2>
+<a id="a64fab6ab36a31f3fd7adac0dd8853cc7" name="a64fab6ab36a31f3fd7adac0dd8853cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64fab6ab36a31f3fd7adac0dd8853cc7">&#9670;&#160;</a></span>remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +296,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool BloombergLP::bmqa::MessageProperties::remove </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -335,8 +334,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2d04e6ed0f30174ae70ef7247cf893a" name="ae2d04e6ed0f30174ae70ef7247cf893a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2d04e6ed0f30174ae70ef7247cf893a">&#9670;&#160;</a></span>setPropertyAsBool()</h2>
+<a id="acde2dfd771240d5059c218b92765083b" name="acde2dfd771240d5059c218b92765083b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde2dfd771240d5059c218b92765083b">&#9670;&#160;</a></span>setPropertyAsBool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +343,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">int BloombergLP::bmqa::MessageProperties::setPropertyAsBool </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -360,11 +359,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set a property with the specified <code>name</code> having the specified boolean <code>value</code>. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
 
 </div>
 </div>
-<a id="ac48392edb2e73c99d89936f198780335" name="ac48392edb2e73c99d89936f198780335"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac48392edb2e73c99d89936f198780335">&#9670;&#160;</a></span>setPropertyAsChar()</h2>
+<a id="a092164f190b3a486727ac5f3dfa74403" name="a092164f190b3a486727ac5f3dfa74403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092164f190b3a486727ac5f3dfa74403">&#9670;&#160;</a></span>setPropertyAsChar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,7 +372,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">int BloombergLP::bmqa::MessageProperties::setPropertyAsChar </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -388,11 +388,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set a property with the specified <code>name</code> having the specified <code>char</code> <code>value</code>. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
 
 </div>
 </div>
-<a id="a39eb655cfed68d9e23aee4ab532d84fe" name="a39eb655cfed68d9e23aee4ab532d84fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39eb655cfed68d9e23aee4ab532d84fe">&#9670;&#160;</a></span>setPropertyAsShort()</h2>
+<a id="a92603885eed24dd1f85a3e6ccf9623a6" name="a92603885eed24dd1f85a3e6ccf9623a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92603885eed24dd1f85a3e6ccf9623a6">&#9670;&#160;</a></span>setPropertyAsShort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +401,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">int BloombergLP::bmqa::MessageProperties::setPropertyAsShort </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -416,11 +417,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set a property with the specified <code>name</code> having the specified <code>short</code> <code>value</code>. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
 
 </div>
 </div>
-<a id="ae6a51374949bd28ad72b327dac581134" name="ae6a51374949bd28ad72b327dac581134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6a51374949bd28ad72b327dac581134">&#9670;&#160;</a></span>setPropertyAsInt32()</h2>
+<a id="ab327f5728910ecdd6c8bd523e4453055" name="ab327f5728910ecdd6c8bd523e4453055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab327f5728910ecdd6c8bd523e4453055">&#9670;&#160;</a></span>setPropertyAsInt32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +430,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">int BloombergLP::bmqa::MessageProperties::setPropertyAsInt32 </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -444,11 +446,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set a property with the specified <code>name</code> having the specified 32-bit integral <code>value</code>. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
 
 </div>
 </div>
-<a id="a9b8d6174f091e1b251bbd84026abf08e" name="a9b8d6174f091e1b251bbd84026abf08e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b8d6174f091e1b251bbd84026abf08e">&#9670;&#160;</a></span>setPropertyAsInt64()</h2>
+<a id="ae7a93fc3227eb9ca533c5c3a6f754db4" name="ae7a93fc3227eb9ca533c5c3a6f754db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a93fc3227eb9ca533c5c3a6f754db4">&#9670;&#160;</a></span>setPropertyAsInt64()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,7 +459,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">int BloombergLP::bmqa::MessageProperties::setPropertyAsInt64 </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -472,11 +475,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set a property with the specified <code>name</code> having the specified 64-bit integral <code>value</code>. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
 
 </div>
 </div>
-<a id="a8d235c38c25cc4d5e828c7e732e11389" name="a8d235c38c25cc4d5e828c7e732e11389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d235c38c25cc4d5e828c7e732e11389">&#9670;&#160;</a></span>setPropertyAsString()</h2>
+<a id="af55ffcdfaee9ccb9e300fbcf3aa88980" name="af55ffcdfaee9ccb9e300fbcf3aa88980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55ffcdfaee9ccb9e300fbcf3aa88980">&#9670;&#160;</a></span>setPropertyAsString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,13 +488,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">int BloombergLP::bmqa::MessageProperties::setPropertyAsString </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -500,11 +504,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Set a property with the specified <code>name</code> having the specified string <code>value</code>. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
 
 </div>
 </div>
-<a id="ab41fcf5e1572fa4f3a97b9ee25e1e3ba" name="ab41fcf5e1572fa4f3a97b9ee25e1e3ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab41fcf5e1572fa4f3a97b9ee25e1e3ba">&#9670;&#160;</a></span>setPropertyAsBinary()</h2>
+<a id="af6be318482583a6c91ef80f476f7e2da" name="af6be318482583a6c91ef80f476f7e2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6be318482583a6c91ef80f476f7e2da">&#9670;&#160;</a></span>setPropertyAsBinary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,13 +517,13 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">int BloombergLP::bmqa::MessageProperties::setPropertyAsBinary </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const bsl::vector&lt; char &gt; &amp;&#160;</td>
+          <td class="paramtype">bsl::span&lt; const char &gt;&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -528,7 +533,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set a property with the specified <code>name</code> having the specified <code>value</code> with the corresponding data type. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
+<p>Set a property with the specified <code>name</code> having the specified bytestring <code>value</code>. Return zero on success, and a non-zero value in case of failure. Note that if a property with <code>name</code> and the same type exists, it will be updated with the provided <code>value</code>, however if the data type of the existing property differs, an error will be returned. </p>
 
 </div>
 </div>
@@ -586,8 +591,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="aad1410225c126541fde3da48f076088f" name="aad1410225c126541fde3da48f076088f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad1410225c126541fde3da48f076088f">&#9670;&#160;</a></span>hasProperty()</h2>
+<a id="a15466f7b61ecc45726294b6b51d8635d" name="a15466f7b61ecc45726294b6b51d8635d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15466f7b61ecc45726294b6b51d8635d">&#9670;&#160;</a></span>hasProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,7 +600,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool BloombergLP::bmqa::MessageProperties::hasProperty </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -615,8 +620,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a0b634da4ea8e6b6837a9ec686b813513" name="a0b634da4ea8e6b6837a9ec686b813513"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b634da4ea8e6b6837a9ec686b813513">&#9670;&#160;</a></span>propertyType()</h2>
+<a id="a9654ad8e173364bc093d71ba49ecc09a" name="a9654ad8e173364bc093d71ba49ecc09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9654ad8e173364bc093d71ba49ecc09a">&#9670;&#160;</a></span>propertyType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -624,18 +629,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structBloombergLP_1_1bmqt_1_1PropertyType.html#a38a96cd3ce3d7dc6ed902bd2192709bc">bmqt::PropertyType::Enum</a> BloombergLP::bmqa::MessageProperties::propertyType </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the type of property having the specified <code>name</code>. Behavior is undefined unless <code>hasProperty</code> returns true for the property <code>name</code>. </p>
+<p>Return the type of the property having the specified <code>name</code>. Behavior is undefined unless <code>hasProperty</code> returns true for the property <code>name</code>. </p>
 
 </div>
 </div>
-<a id="a290d5828f112a33d3e66734cf5ed0b12" name="a290d5828f112a33d3e66734cf5ed0b12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a290d5828f112a33d3e66734cf5ed0b12">&#9670;&#160;</a></span>getPropertyAsBool()</h2>
+<a id="ae76f93ba7533ef74666ce9cd30a4c843" name="ae76f93ba7533ef74666ce9cd30a4c843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae76f93ba7533ef74666ce9cd30a4c843">&#9670;&#160;</a></span>getPropertyAsBool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,17 +648,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool BloombergLP::bmqa::MessageProperties::getPropertyAsBool </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the value of the boolean property of the specified <code>name</code>. The behavior is undefined unless this instance has a property of the specified <code>name</code> with a boolean type. </p>
 
 </div>
 </div>
-<a id="ab3500c067989d06fb6fd923cf5ea023e" name="ab3500c067989d06fb6fd923cf5ea023e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3500c067989d06fb6fd923cf5ea023e">&#9670;&#160;</a></span>getPropertyAsChar()</h2>
+<a id="a2babacb0d85f48e13b656435799d1405" name="a2babacb0d85f48e13b656435799d1405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2babacb0d85f48e13b656435799d1405">&#9670;&#160;</a></span>getPropertyAsChar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -661,17 +667,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">char BloombergLP::bmqa::MessageProperties::getPropertyAsChar </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the value of the <code>char</code> property of the specified <code>name</code>. The behavior is undefined unless this instance has a property of the specified <code>name</code> with a <code>char</code> type. </p>
 
 </div>
 </div>
-<a id="aac4c262b5291f6e52238418bbac8522a" name="aac4c262b5291f6e52238418bbac8522a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac4c262b5291f6e52238418bbac8522a">&#9670;&#160;</a></span>getPropertyAsShort()</h2>
+<a id="aa8b10d99e3fa06d95d327a33ee6655f2" name="aa8b10d99e3fa06d95d327a33ee6655f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b10d99e3fa06d95d327a33ee6655f2">&#9670;&#160;</a></span>getPropertyAsShort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -679,17 +686,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">short BloombergLP::bmqa::MessageProperties::getPropertyAsShort </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the value of the <code>short</code> property of the specified <code>name</code>. The behavior is undefined unless this instance has a property of the specified <code>name</code> with a <code>short</code> type. </p>
 
 </div>
 </div>
-<a id="a4fe96626890c431a96624bbf7b3917dd" name="a4fe96626890c431a96624bbf7b3917dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fe96626890c431a96624bbf7b3917dd">&#9670;&#160;</a></span>getPropertyAsInt32()</h2>
+<a id="a3ce8b6e1170d03c06cabebd879657272" name="a3ce8b6e1170d03c06cabebd879657272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce8b6e1170d03c06cabebd879657272">&#9670;&#160;</a></span>getPropertyAsInt32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -697,17 +705,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bsl::int32_t BloombergLP::bmqa::MessageProperties::getPropertyAsInt32 </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the value of the 32-bit integral property of the specified <code>name</code>. The behavior is undefined unless this instance has a property of the specified <code>name</code> with a 32-bit integral type. </p>
 
 </div>
 </div>
-<a id="a4e2cbb3019eee045fe643874ce466f2a" name="a4e2cbb3019eee045fe643874ce466f2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e2cbb3019eee045fe643874ce466f2a">&#9670;&#160;</a></span>getPropertyAsInt64()</h2>
+<a id="af4bc2a1de509053b2ec91468b2c43e50" name="af4bc2a1de509053b2ec91468b2c43e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4bc2a1de509053b2ec91468b2c43e50">&#9670;&#160;</a></span>getPropertyAsInt64()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -715,17 +724,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bsls::Types::Int64 BloombergLP::bmqa::MessageProperties::getPropertyAsInt64 </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the value of the 64-bit integral property of the specified <code>name</code>. The behavior is undefined unless this instance has a property of the specified <code>name</code> with a 64-bit integral type. </p>
 
 </div>
 </div>
-<a id="ae13489d3b68de6026210850300486f56" name="ae13489d3b68de6026210850300486f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae13489d3b68de6026210850300486f56">&#9670;&#160;</a></span>getPropertyAsString()</h2>
+<a id="a313fea8b815e0b08f93736dcc43b7f18" name="a313fea8b815e0b08f93736dcc43b7f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313fea8b815e0b08f93736dcc43b7f18">&#9670;&#160;</a></span>getPropertyAsString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -733,17 +743,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">const bsl::string &amp; BloombergLP::bmqa::MessageProperties::getPropertyAsString </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the value of the string property of the specified <code>name</code>. The behavior is undefined unless this instance has a property of the specified <code>name</code> with a string type. </p>
 
 </div>
 </div>
-<a id="a67357d6c45d6f18bdc2a00b457d08e46" name="a67357d6c45d6f18bdc2a00b457d08e46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67357d6c45d6f18bdc2a00b457d08e46">&#9670;&#160;</a></span>getPropertyAsBinary()</h2>
+<a id="a8a01c2445247d9f83daf4bd0c1e04cb3" name="a8a01c2445247d9f83daf4bd0c1e04cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a01c2445247d9f83daf4bd0c1e04cb3">&#9670;&#160;</a></span>getPropertyAsBinary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,18 +762,18 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">const bsl::vector&lt; char &gt; &amp; BloombergLP::bmqa::MessageProperties::getPropertyAsBinary </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the property having the corresponding type and the specified <code>name</code>. Behavior is undefined unless property with <code>name</code> exists. </p>
+<p>Return the value of the bytestring property of the specified <code>name</code>. The behavior is undefined unless this instance has a property of the specified <code>name</code> with a bytestring type. </p>
 
 </div>
 </div>
-<a id="ae094d785ce7c2c62f558aed609cfe6e9" name="ae094d785ce7c2c62f558aed609cfe6e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae094d785ce7c2c62f558aed609cfe6e9">&#9670;&#160;</a></span>getPropertyAsBoolOr()</h2>
+<a id="a995680da05ef1a9a0e2720cc1e634632" name="a995680da05ef1a9a0e2720cc1e634632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995680da05ef1a9a0e2720cc1e634632">&#9670;&#160;</a></span>getPropertyAsBoolOr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -770,7 +781,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bool BloombergLP::bmqa::MessageProperties::getPropertyAsBoolOr </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -786,11 +797,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the boolean property having the specified <code>name</code> if such a property exists. Return the specified <code>value</code> if this instance does not have a property with the specified <code>name</code>. The behavior is undefined unless the property with the specified <code>name</code> has a boolean type or does not exist. </p>
 
 </div>
 </div>
-<a id="a9d362e48790eb0f624fc7030e22e52aa" name="a9d362e48790eb0f624fc7030e22e52aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d362e48790eb0f624fc7030e22e52aa">&#9670;&#160;</a></span>getPropertyAsCharOr()</h2>
+<a id="a664162511099d464892fd54062fc6add" name="a664162511099d464892fd54062fc6add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664162511099d464892fd54062fc6add">&#9670;&#160;</a></span>getPropertyAsCharOr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -798,7 +810,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">char BloombergLP::bmqa::MessageProperties::getPropertyAsCharOr </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -814,11 +826,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the <code>char</code> property having the specified <code>name</code> if such a property exists. Return the specified <code>value</code> if this instance does not have a property with the specified <code>name</code>. The behavior is undefined unless the property with the specified <code>name</code> has a <code>char</code> type or does not exist. </p>
 
 </div>
 </div>
-<a id="a9bc257e36cd828b26f1cfd4a363b3d4f" name="a9bc257e36cd828b26f1cfd4a363b3d4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bc257e36cd828b26f1cfd4a363b3d4f">&#9670;&#160;</a></span>getPropertyAsShortOr()</h2>
+<a id="a4af81f238fa4ec031372a726f235aa6b" name="a4af81f238fa4ec031372a726f235aa6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af81f238fa4ec031372a726f235aa6b">&#9670;&#160;</a></span>getPropertyAsShortOr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -826,7 +839,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">short BloombergLP::bmqa::MessageProperties::getPropertyAsShortOr </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -842,11 +855,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the <code>short</code> property having the specified <code>name</code> if such a property exists. Return the specified <code>value</code> if this instance does not have a property with the specified <code>name</code>. The behavior is undefined unless the property with the specified <code>name</code> has a <code>short</code> type or does not exist. </p>
 
 </div>
 </div>
-<a id="af68b1cfd9cdff8891ae609c9ab85dbf3" name="af68b1cfd9cdff8891ae609c9ab85dbf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af68b1cfd9cdff8891ae609c9ab85dbf3">&#9670;&#160;</a></span>getPropertyAsInt32Or()</h2>
+<a id="a2c7a3607cc6e9d36387ef986d0e00478" name="a2c7a3607cc6e9d36387ef986d0e00478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7a3607cc6e9d36387ef986d0e00478">&#9670;&#160;</a></span>getPropertyAsInt32Or()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -854,7 +868,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bsl::int32_t BloombergLP::bmqa::MessageProperties::getPropertyAsInt32Or </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -870,11 +884,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the 32-bit integral property having the specified <code>name</code> if such a property exists. Return the specified <code>value</code> if this instance does not have a property with the specified <code>name</code>. The behavior is undefined unless the property with the specified <code>name</code> has a 32-bit integral type or does not exist. </p>
 
 </div>
 </div>
-<a id="a453d9dfc465056ae08dc53427f3a80e9" name="a453d9dfc465056ae08dc53427f3a80e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a453d9dfc465056ae08dc53427f3a80e9">&#9670;&#160;</a></span>getPropertyAsInt64Or()</h2>
+<a id="a0f6fee6136512e6de21880f7759e21ba" name="a0f6fee6136512e6de21880f7759e21ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6fee6136512e6de21880f7759e21ba">&#9670;&#160;</a></span>getPropertyAsInt64Or()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -882,7 +897,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">bsls::Types::Int64 BloombergLP::bmqa::MessageProperties::getPropertyAsInt64Or </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -898,11 +913,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the 64-bit integral property having the specified <code>name</code> if such a property exists. Return the specified <code>value</code> if this instance does not have a property with the specified <code>name</code>. The behavior is undefined unless the property with the specified <code>name</code> has a 64-bit integral type or does not exist. </p>
 
 </div>
 </div>
-<a id="a2824bd9581488be8b3ec38f89f77ddac" name="a2824bd9581488be8b3ec38f89f77ddac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2824bd9581488be8b3ec38f89f77ddac">&#9670;&#160;</a></span>getPropertyAsStringOr()</h2>
+<a id="a9c99e18d6abe05ea78b4d701f465b34d" name="a9c99e18d6abe05ea78b4d701f465b34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c99e18d6abe05ea78b4d701f465b34d">&#9670;&#160;</a></span>getPropertyAsStringOr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -910,7 +926,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">const bsl::string &amp; BloombergLP::bmqa::MessageProperties::getPropertyAsStringOr </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -926,11 +942,12 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Return the string property having the specified <code>name</code> if such a property exists. Return the specified <code>value</code> if this instance does not have a property with the specified <code>name</code>. The behavior is undefined unless the property with the specified <code>name</code> has a string type or does not exist. </p>
 
 </div>
 </div>
-<a id="a06c3544b913a67fb8c6560b4bfd30835" name="a06c3544b913a67fb8c6560b4bfd30835"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c3544b913a67fb8c6560b4bfd30835">&#9670;&#160;</a></span>getPropertyAsBinaryOr()</h2>
+<a id="a5944686e7acbac2b0505427eccb87e20" name="a5944686e7acbac2b0505427eccb87e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5944686e7acbac2b0505427eccb87e20">&#9670;&#160;</a></span>getPropertyAsBinaryOr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -938,7 +955,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">const bsl::vector&lt; char &gt; &amp; BloombergLP::bmqa::MessageProperties::getPropertyAsBinaryOr </td>
           <td>(</td>
-          <td class="paramtype">const bsl::string &amp;&#160;</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -954,7 +971,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the property having the corresponding type and the specified <code>name</code> if property with such a name exists. Return the specified <code>value</code> if property with <code>name</code> does not exist. </p>
+<p>Return the bytestring property having the specified <code>name</code> if such a property exists. Return the specified <code>value</code> if this instance does not have a property with the specified <code>name</code>. The behavior is undefined unless the property with the specified <code>name</code> has a bytestring type or does not exist. </p>
 
 </div>
 </div>
@@ -1008,7 +1025,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Format this object to the specified output <code>stream</code> at the (absolute value of) the optionally specified indentation <code>level</code> and return a reference to <code>stream</code>. If <code>level</code> is specified, optionally specify <code>spacesPerLevel</code>, the number of spaces per indentation level for this and all of its nested objects. If <code>level</code> is negative, suppress indentation of the first line. If <code>spacesPerLevel</code> is negative format the entire output on one line, suppressing all but the initial indentation (as governed by <code>level</code>). If <code>stream</code> is not valid on entry, this operation has no effect. </p>
+<p>Format this object to the specified output <code>stream</code> at the (absolute value of) the optionally specified indentation <code>level</code> and return a reference to <code>stream</code>. If <code>level</code> is specified, optionally specify <code>spacesPerLevel</code>, the number of spaces per indentation level for this and all of its nested objects. If <code>level</code> is negative, suppress indentation of the first line. If <code>spacesPerLevel</code> is negative, format the entire output on one line, suppressing all but the initial indentation (as governed by <code>level</code>). If <code>stream</code> is not valid on entry, this operation has no effect. </p>
 
 <p class="reference">Referenced by <a class="el" href="namespaceBloombergLP_1_1bmqa.html#ad238ed1340661b5ca3fc93099aa4d124">BloombergLP::bmqa::operator&lt;&lt;()</a>.</p>
 
@@ -1057,6 +1074,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Maximum number of properties that can appear in a <a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html">bmqa::Message</a>. </p>
 
 </div>
 </div>
@@ -1124,7 +1142,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>~64 MB Maximum length of a property value. Note that this value is just under 64 MB. Also note that this value is calculated assuming that there is only one property and property's name has maximum allowable length, and also takes into consideration the protocol overhead. </p>
+<p>Maximum length of a property value. Note that this value is just under 64 MB. Also note that this value is calculated assuming that there is only one property and property's name has maximum allowable length, and also takes into consideration the protocol overhead. </p>
 
 </div>
 </div>

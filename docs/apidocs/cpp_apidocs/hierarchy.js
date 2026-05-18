@@ -6,6 +6,7 @@ var hierarchy =
     ] ],
     [ "BloombergLP::bmqa::MockSessionUtil::AckParams", "structBloombergLP_1_1bmqa_1_1MockSessionUtil_1_1AckParams.html", null ],
     [ "BloombergLP::bmqt::AckResult", "structBloombergLP_1_1bmqt_1_1AckResult.html", null ],
+    [ "BloombergLP::bmqt::AuthnCredential", "classBloombergLP_1_1bmqt_1_1AuthnCredential.html", null ],
     [ "BloombergLP::bmqpi::DTSpan::Baggage", "classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html", null ],
     [ "BloombergLP::bmqt::CloseQueueResult", "structBloombergLP_1_1bmqt_1_1CloseQueueResult.html", null ],
     [ "BloombergLP::bmqa::CloseQueueStatus", "classBloombergLP_1_1bmqa_1_1CloseQueueStatus.html", null ],
@@ -57,5 +58,6 @@ var hierarchy =
     [ "BloombergLP::bmqt::Uri", "classBloombergLP_1_1bmqt_1_1Uri.html", null ],
     [ "BloombergLP::bmqt::UriBuilder", "classBloombergLP_1_1bmqt_1_1UriBuilder.html", null ],
     [ "BloombergLP::bmqt::UriParser", "structBloombergLP_1_1bmqt_1_1UriParser.html", null ],
+    [ "BloombergLP::bmqt::UriParser::UriParseResult", "structBloombergLP_1_1bmqt_1_1UriParser_1_1UriParseResult.html", null ],
     [ "BloombergLP::bmqt::Version", "classBloombergLP_1_1bmqt_1_1Version.html", null ]
 ];

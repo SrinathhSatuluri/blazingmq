@@ -21,6 +21,7 @@ var classBloombergLP_1_1bmqa_1_1Message =
     [ "ackStatus", "classBloombergLP_1_1bmqa_1_1Message.html#ae1e4e9728ceeae244c37a106893f6121", null ],
     [ "getData", "classBloombergLP_1_1bmqa_1_1Message.html#a566651ed95a9e82ac1d286626cb1ea5d", null ],
     [ "dataSize", "classBloombergLP_1_1bmqa_1_1Message.html#ae6b36d708dacd65a75e1d885009cf6c8", null ],
+    [ "totalSize", "classBloombergLP_1_1bmqa_1_1Message.html#a578a9161a9c55165ef94e8941aa6a0ff", null ],
     [ "hasProperties", "classBloombergLP_1_1bmqa_1_1Message.html#a65d9baad8ec080293075ddaaa687e45f", null ],
     [ "loadProperties", "classBloombergLP_1_1bmqa_1_1Message.html#ae2012cfab817c05b304e06b49337adde", null ],
     [ "print", "classBloombergLP_1_1bmqa_1_1Message.html#a20bb2576c7fb2a53d366aed138519908", null ]

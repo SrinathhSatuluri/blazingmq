@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -99,9 +99,14 @@ $(document).ready(function(){initNavTree('bmqt__sessionoptions_8h.html',''); ini
 
 <p>Provide a value-semantic type to configure session with the broker.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;bdlt_timeunitratio.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="bmqt__authncredential_8h_source.html">bmqt_authncredential.h</a>&gt;</code><br />
+<code>#include &lt;bdlb_chartype.h&gt;</code><br />
+<code>#include &lt;bdlt_timeunitratio.h&gt;</code><br />
+<code>#include &lt;bsl_algorithm.h&gt;</code><br />
+<code>#include &lt;bsl_functional.h&gt;</code><br />
 <code>#include &lt;bsl_iosfwd.h&gt;</code><br />
 <code>#include &lt;bsl_memory.h&gt;</code><br />
+<code>#include &lt;bsl_optional.h&gt;</code><br />
 <code>#include &lt;bsl_string.h&gt;</code><br />
 <code>#include &lt;bsla_annotations.h&gt;</code><br />
 <code>#include &lt;bslma_allocator.h&gt;</code><br />
@@ -156,7 +161,8 @@ Functions</h2></td></tr>
 <li><em>connectTimeout</em>, <em>disconnectTimeout</em>, <em>openQueueTimeout</em>, <em>configureQueueTimeout</em>, <em>closeQueueTimeout</em>: Default timeout to use for various operations.</li>
 <li><em>eventQueueLowWatermark</em>, <em>eventQueueHighWatermark</em>: Parameters to configure the EventQueue notification watermarks thresholds. The EventQueue is the buffer of all incoming events from the broker (PUSH and ACK messages as well as session and queue operations result) pending being processed by the application code. A warning (<a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a90ce299f088565b46f31f2207dec922e">bmqt::SessionEventType::e_SLOWCONSUMER_HIGHWATERMARK</a>) is emitted when the buffer reaches the <code>highWatermark</code> value, and a notification (<a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431aa4c0a2b2dde582bd673d0315dcd43226">bmqt::SessionEventType::e_SLOWCONSUMER_NORMAL</a>) is sent when the buffer is back to the <code>lowWatermark</code>. The <code>highWatermark</code> typically would be reached in case of either a very slow consumer, causing events to accumulate in the buffer, or a huge burst of data. Setting the <code>highWatermark</code> to a high value should be done cautiously because it will potentially hide slowness of the consumer because of the enqueuing of PUSH events for a consumer, ACK events for a producer as well as all system events to the buffer (meaning that the messages may have a huge latency). Note, it is also recommended to have a reasonable distance between <code>highWatermark</code> and <code>lowWatermark</code> values to avoid a constant back and forth toggling of state resulting from push pop of events.</li>
 <li><em>hostHealthMonitor</em>: Optional instance of a class derived from <a class="el" href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html">bmqpi::HostHealthMonitor</a>, responsible for notifying the <a class="el" href="classBloombergLP_1_1bmqa_1_1Session.html">bmqa::Session</a> when the health of the host machine has changed. A <code>hostHealthMonitor</code> must be specified, in order for queues opened through the session to suspend on unhealthy hosts.</li>
-<li><em>traceOptions</em>: Provides the <a class="el" href="classBloombergLP_1_1bmqpi_1_1DTContext.html">bmqpi::DTContext</a> and <a class="el" href="classBloombergLP_1_1bmqpi_1_1DTTracer.html">bmqpi::DTTracer</a> objects required for integration with a Distributed Trace framework. If these objects are provided, then the session will use them to create "spans" to represent requests made to the BlazingMQ broker on behalf of operations initiated by the client. This includes session-level operations (e.g., Session-Start, Session-Stop) as well as queue-level operations (e.g., Queue-Open, Queue-Configure, Queue-Close). </li>
+<li><em>traceOptions</em>: Provides the <a class="el" href="classBloombergLP_1_1bmqpi_1_1DTContext.html">bmqpi::DTContext</a> and <a class="el" href="classBloombergLP_1_1bmqpi_1_1DTTracer.html">bmqpi::DTTracer</a> objects required for integration with a Distributed Trace framework. If these objects are provided, then the session will use them to create "spans" to represent requests made to the BlazingMQ broker on behalf of operations initiated by the client. This includes session-level operations (e.g., Session-Start, Session-Stop) as well as queue-level operations (e.g., Queue-Open, Queue-Configure, Queue-Close).</li>
+<li><em>userAgentPrefix</em>: String to include in the user agent for broker telemetry. This string must only contain printable characters and must be less than 128 characters long. This is provided for libraries that are wrapping this SDK. Applications directly using the SDK are encouraged <em>NOT</em> to set this value. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

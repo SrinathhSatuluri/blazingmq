@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -112,70 +112,69 @@ $(document).ready(function(){initNavTree('bmqa__manualhosthealthmonitor_8h_sourc
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// See the License for the specific language governing permissions and</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// limitations under the License.</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// bmqa_manualhosthealthmonitor.h                                     -*-C++-*-</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef INCLUDED_BMQA_MANUALHOSTHEALTHMONITOR</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define INCLUDED_BMQA_MANUALHOSTHEALTHMONITOR</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// BMQ</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="bmqpi__hosthealthmonitor_8h.html">bmqpi_hosthealthmonitor.h</a>&gt;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;<a class="code" href="bmqt__hosthealthstate_8h.html">bmqt_hosthealthstate.h</a>&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// BDE</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;bdlmt_signaler.h&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;bsl_memory.h&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;bsls_keyword.h&gt;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBloombergLP.html">BloombergLP</a> {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">namespace </span>bmqa {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// =============================</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// class ManualHostHealthMonitor</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// =============================</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html">   48</a></span><span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html">ManualHostHealthMonitor</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html">bmqpi::HostHealthMonitor</a> {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// PRIVATE DATA</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    bsl::shared_ptr&lt;bmqpi::HostHealthMonitor&gt; d_impl_sp;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// CREATORS</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a4a17449e0531006e880a3a076116edc6">   59</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a4a17449e0531006e880a3a076116edc6">ManualHostHealthMonitor</a>(<a class="code hl_enumeration" href="structBloombergLP_1_1bmqt_1_1HostHealthState.html#a38c1e3175bee247506af04009810eb6e">bmqt::HostHealthState::Enum</a> initialState,</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                            bslma::Allocator*           allocator = 0);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#aeb9feeb66a0730a1bbae17d739186ce6">   63</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#aeb9feeb66a0730a1bbae17d739186ce6">~ManualHostHealthMonitor</a>() BSLS_KEYWORD_OVERRIDE;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// MANIPULATORS</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    bdlmt::SignalerConnection</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a5e520c36984099e1ceab222b3e61933c">   67</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a5e520c36984099e1ceab222b3e61933c">observeHostHealth</a>(const <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#a7f07d4c411b768b570ad25033f9822da">HostHealthChangeFn</a>&amp; cb) BSLS_KEYWORD_OVERRIDE;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a254d9fd2ad33c255491bc6fcb092fa12">   69</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a254d9fd2ad33c255491bc6fcb092fa12">setState</a>(bmqt::HostHealthState::Enum newState);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// ACCESSORS</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#adac95711851d65c54f3fba765c70a052">   72</a></span>    bmqt::HostHealthState::Enum <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#adac95711851d65c54f3fba765c70a052">hostState</a>() const BSLS_KEYWORD_OVERRIDE;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef INCLUDED_BMQA_MANUALHOSTHEALTHMONITOR</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define INCLUDED_BMQA_MANUALHOSTHEALTHMONITOR</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// BMQ</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="bmqpi__hosthealthmonitor_8h.html">bmqpi_hosthealthmonitor.h</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="bmqt__hosthealthstate_8h.html">bmqt_hosthealthstate.h</a>&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// BDE</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;bdlmt_signaler.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;bsl_memory.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;bsls_keyword.h&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBloombergLP.html">BloombergLP</a> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">namespace </span>bmqa {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// =============================</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// class ManualHostHealthMonitor</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// =============================</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html">ManualHostHealthMonitor</a> : <span class="keyword">public</span> <a class="code hl_class" href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html">bmqpi::HostHealthMonitor</a> {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// PRIVATE DATA</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    bsl::shared_ptr&lt;bmqpi::HostHealthMonitor&gt; d_impl_sp;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// CREATORS</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a4a17449e0531006e880a3a076116edc6">   58</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a4a17449e0531006e880a3a076116edc6">ManualHostHealthMonitor</a>(<a class="code hl_enumeration" href="structBloombergLP_1_1bmqt_1_1HostHealthState.html#a38c1e3175bee247506af04009810eb6e">bmqt::HostHealthState::Enum</a> initialState,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                            bslma::Allocator*           allocator = 0);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#aeb9feeb66a0730a1bbae17d739186ce6">   62</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#aeb9feeb66a0730a1bbae17d739186ce6">~ManualHostHealthMonitor</a>() BSLS_KEYWORD_OVERRIDE;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// MANIPULATORS</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    bdlmt::SignalerConnection</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a5e520c36984099e1ceab222b3e61933c">   66</a></span>    <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a5e520c36984099e1ceab222b3e61933c">observeHostHealth</a>(const <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#a7f07d4c411b768b570ad25033f9822da">HostHealthChangeFn</a>&amp; cb) BSLS_KEYWORD_OVERRIDE;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a254d9fd2ad33c255491bc6fcb092fa12">   68</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a254d9fd2ad33c255491bc6fcb092fa12">setState</a>(bmqt::HostHealthState::Enum newState);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// ACCESSORS</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#adac95711851d65c54f3fba765c70a052">   71</a></span>    bmqt::HostHealthState::Enum <a class="code hl_function" href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#adac95711851d65c54f3fba765c70a052">hostState</a>() const BSLS_KEYWORD_OVERRIDE;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
 </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// close package namespace</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}  <span class="comment">// close enterprise namespace</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}  <span class="comment">// close package namespace</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// close enterprise namespace</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="abmqpi__hosthealthmonitor_8h_html"><div class="ttname"><a href="bmqpi__hosthealthmonitor_8h.html">bmqpi_hosthealthmonitor.h</a></div><div class="ttdoc">Provide an interface for monitoring the health of the host.</div></div>
 <div class="ttc" id="abmqt__hosthealthstate_8h_html"><div class="ttname"><a href="bmqt__hosthealthstate_8h.html">bmqt_hosthealthstate.h</a></div><div class="ttdoc">Provide an enumeration for different host health states.</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html">BloombergLP::bmqa::ManualHostHealthMonitor</a></div><div class="ttdef"><b>Definition</b> bmqa_manualhosthealthmonitor.h:48</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor_html"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html">BloombergLP::bmqa::ManualHostHealthMonitor</a></div><div class="ttdef"><b>Definition</b> bmqa_manualhosthealthmonitor.h:47</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor_html_a254d9fd2ad33c255491bc6fcb092fa12"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a254d9fd2ad33c255491bc6fcb092fa12">BloombergLP::bmqa::ManualHostHealthMonitor::setState</a></div><div class="ttdeci">void setState(bmqt::HostHealthState::Enum newState)</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor_html_a4a17449e0531006e880a3a076116edc6"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a4a17449e0531006e880a3a076116edc6">BloombergLP::bmqa::ManualHostHealthMonitor::ManualHostHealthMonitor</a></div><div class="ttdeci">ManualHostHealthMonitor(bmqt::HostHealthState::Enum initialState, bslma::Allocator *allocator=0)</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor_html_a5e520c36984099e1ceab222b3e61933c"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#a5e520c36984099e1ceab222b3e61933c">BloombergLP::bmqa::ManualHostHealthMonitor::observeHostHealth</a></div><div class="ttdeci">bdlmt::SignalerConnection observeHostHealth(const HostHealthChangeFn &amp;cb) BSLS_KEYWORD_OVERRIDE</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor_html_adac95711851d65c54f3fba765c70a052"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#adac95711851d65c54f3fba765c70a052">BloombergLP::bmqa::ManualHostHealthMonitor::hostState</a></div><div class="ttdeci">bmqt::HostHealthState::Enum hostState() const BSLS_KEYWORD_OVERRIDE</div><div class="ttdoc">Queries the current health of the host.</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor_html_aeb9feeb66a0730a1bbae17d739186ce6"><div class="ttname"><a href="classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#aeb9feeb66a0730a1bbae17d739186ce6">BloombergLP::bmqa::ManualHostHealthMonitor::~ManualHostHealthMonitor</a></div><div class="ttdeci">~ManualHostHealthMonitor() BSLS_KEYWORD_OVERRIDE</div><div class="ttdoc">Destructor.</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1HostHealthMonitor_html"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html">BloombergLP::bmqpi::HostHealthMonitor</a></div><div class="ttdoc">A pure interface for monitoring the health of the host.</div><div class="ttdef"><b>Definition</b> bmqpi_hosthealthmonitor.h:44</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1HostHealthMonitor_html_a7f07d4c411b768b570ad25033f9822da"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#a7f07d4c411b768b570ad25033f9822da">BloombergLP::bmqpi::HostHealthMonitor::HostHealthChangeFn</a></div><div class="ttdeci">bsl::function&lt; void(bmqt::HostHealthState::Enum)&gt; HostHealthChangeFn</div><div class="ttdef"><b>Definition</b> bmqpi_hosthealthmonitor.h:51</div></div>
-<div class="ttc" id="anamespaceBloombergLP_html"><div class="ttname"><a href="namespaceBloombergLP.html">BloombergLP</a></div><div class="ttdef"><b>Definition</b> bmqa_abstractsession.h:42</div></div>
-<div class="ttc" id="astructBloombergLP_1_1bmqt_1_1HostHealthState_html_a38c1e3175bee247506af04009810eb6e"><div class="ttname"><a href="structBloombergLP_1_1bmqt_1_1HostHealthState.html#a38c1e3175bee247506af04009810eb6e">BloombergLP::bmqt::HostHealthState::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> bmqt_hosthealthstate.h:47</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1HostHealthMonitor_html"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html">BloombergLP::bmqpi::HostHealthMonitor</a></div><div class="ttdoc">A pure interface for monitoring the health of the host.</div><div class="ttdef"><b>Definition</b> bmqpi_hosthealthmonitor.h:43</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1HostHealthMonitor_html_a7f07d4c411b768b570ad25033f9822da"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#a7f07d4c411b768b570ad25033f9822da">BloombergLP::bmqpi::HostHealthMonitor::HostHealthChangeFn</a></div><div class="ttdeci">bsl::function&lt; void(bmqt::HostHealthState::Enum)&gt; HostHealthChangeFn</div><div class="ttdef"><b>Definition</b> bmqpi_hosthealthmonitor.h:50</div></div>
+<div class="ttc" id="anamespaceBloombergLP_html"><div class="ttname"><a href="namespaceBloombergLP.html">BloombergLP</a></div><div class="ttdef"><b>Definition</b> bmqa_abstractsession.h:41</div></div>
+<div class="ttc" id="astructBloombergLP_1_1bmqt_1_1HostHealthState_html_a38c1e3175bee247506af04009810eb6e"><div class="ttname"><a href="structBloombergLP_1_1bmqt_1_1HostHealthState.html#a38c1e3175bee247506af04009810eb6e">BloombergLP::bmqt::HostHealthState::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> bmqt_hosthealthstate.h:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

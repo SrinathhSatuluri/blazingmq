@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -112,97 +112,96 @@ $(document).ready(function(){initNavTree('bmqpi__dtspan_8h_source.html',''); ini
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// See the License for the specific language governing permissions and</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// limitations under the License.</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// bmqpi_dtspan.h                                                     -*-C++-*-</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef INCLUDED_BMQPI_DTSPAN</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define INCLUDED_BMQPI_DTSPAN</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// BMQ</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// BDE</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;bsl_string.h&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;bsl_string_view.h&gt;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;bsl_unordered_map.h&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;bslma_allocator.h&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBloombergLP.html">BloombergLP</a> {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">namespace </span>bmqpi {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// ============</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// class DTSpan</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// ============</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html">DTSpan</a> {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// PUBLIC CREATORS</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a94c66598d15f52e2fb339006c6c36ac4">   52</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a94c66598d15f52e2fb339006c6c36ac4">~DTSpan</a>();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// PUBLIC ACCESSORS</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a936df7f4679a43f2fe8850bae4b43f62">   57</a></span>    <span class="keyword">virtual</span> bsl::string_view <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a936df7f4679a43f2fe8850bae4b43f62">operation</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// =============</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// class Baggage</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// =============</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// PUBLIC INNER CLASSES</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="foldopen" id="foldopen00066" data-start="{" data-end="};">
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html">   66</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html">Baggage</a> BSLS_KEYWORD_FINAL {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">// PRIVATE TYPEDEFS</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keyword">typedef</span> bsl::unordered_map&lt;bsl::string, bsl::string&gt; MapType;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="comment">// PRIVATE DATA</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        MapType d_data;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// PUBLIC TYPES</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">   76</a></span>        <span class="keyword">typedef</span> MapType::const_iterator <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">const_iterator</a>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="comment">// PUBLIC CREATORS</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ad9da9662f84816b0604e10fb81f6166b">   79</a></span>        <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ad9da9662f84816b0604e10fb81f6166b">Baggage</a>(bslma::Allocator* allocator = 0);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="comment">// PUBLIC ACCESSORS</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae41106ce227f61c71683fbc10781488a">   84</a></span>        <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">const_iterator</a> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae41106ce227f61c71683fbc10781488a">begin</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#af1e7ecea430f906f90395c1dbb402b0d">   87</a></span>        <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">const_iterator</a> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#af1e7ecea430f906f90395c1dbb402b0d">end</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a7005eae216ca0f1c613a78598694aeeb">   91</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a7005eae216ca0f1c613a78598694aeeb">has</a>(<span class="keyword">const</span> bsl::string&amp; key) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a2881704c157c70e2304e49c027168b96">   99</a></span>        bsl::string_view <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a2881704c157c70e2304e49c027168b96">get</a>(<span class="keyword">const</span> bsl::string&amp;      key,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                             <span class="keyword">const</span> bsl::string_view&amp; dflt = <span class="stringliteral">&quot;&quot;</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">// PUBLIC MANIPULATORS</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae69ceee9abf973d26460491f6a114405">  107</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae69ceee9abf973d26460491f6a114405">put</a>(<span class="keyword">const</span> bsl::string_view&amp; key, <span class="keyword">const</span> bsl::string_view&amp; value);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a5e5d85fea1379e67cd1e1a9ed9ae09f0">  111</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a5e5d85fea1379e67cd1e1a9ed9ae09f0">erase</a>(<span class="keyword">const</span> bsl::string&amp; key);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    };</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifndef INCLUDED_BMQPI_DTSPAN</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define INCLUDED_BMQPI_DTSPAN</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// BMQ</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// BDE</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;bsl_string.h&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;bsl_string_view.h&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;bsl_unordered_map.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;bslma_allocator.h&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceBloombergLP.html">BloombergLP</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">namespace </span>bmqpi {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// ============</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// class DTSpan</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// ============</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html">   46</a></span><span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html">DTSpan</a> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// PUBLIC CREATORS</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a94c66598d15f52e2fb339006c6c36ac4">   51</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a94c66598d15f52e2fb339006c6c36ac4">~DTSpan</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// PUBLIC ACCESSORS</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a936df7f4679a43f2fe8850bae4b43f62">   56</a></span>    <span class="keyword">virtual</span> bsl::string_view <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a936df7f4679a43f2fe8850bae4b43f62">operation</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// =============</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// class Baggage</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// =============</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// PUBLIC INNER CLASSES</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html">   65</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html">Baggage</a> BSLS_KEYWORD_FINAL {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// PRIVATE TYPEDEFS</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">typedef</span> bsl::unordered_map&lt;bsl::string, bsl::string&gt; MapType;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="comment">// PRIVATE DATA</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        MapType d_data;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">// PUBLIC TYPES</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">   75</a></span>        <span class="keyword">typedef</span> MapType::const_iterator <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">const_iterator</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="comment">// PUBLIC CREATORS</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ad9da9662f84816b0604e10fb81f6166b">   78</a></span>        <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ad9da9662f84816b0604e10fb81f6166b">Baggage</a>(bslma::Allocator* allocator = 0);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="comment">// PUBLIC ACCESSORS</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae41106ce227f61c71683fbc10781488a">   83</a></span>        <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">const_iterator</a> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae41106ce227f61c71683fbc10781488a">begin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#af1e7ecea430f906f90395c1dbb402b0d">   86</a></span>        <a class="code hl_typedef" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">const_iterator</a> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#af1e7ecea430f906f90395c1dbb402b0d">end</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a7005eae216ca0f1c613a78598694aeeb">   90</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a7005eae216ca0f1c613a78598694aeeb">has</a>(<span class="keyword">const</span> bsl::string&amp; key) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a2881704c157c70e2304e49c027168b96">   98</a></span>        bsl::string_view <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a2881704c157c70e2304e49c027168b96">get</a>(<span class="keyword">const</span> bsl::string&amp;      key,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                             <span class="keyword">const</span> bsl::string_view&amp; dflt = <span class="stringliteral">&quot;&quot;</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">// PUBLIC MANIPULATORS</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae69ceee9abf973d26460491f6a114405">  106</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae69ceee9abf973d26460491f6a114405">put</a>(<span class="keyword">const</span> bsl::string_view&amp; key, <span class="keyword">const</span> bsl::string_view&amp; value);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a5e5d85fea1379e67cd1e1a9ed9ae09f0">  110</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a5e5d85fea1379e67cd1e1a9ed9ae09f0">erase</a>(<span class="keyword">const</span> bsl::string&amp; key);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    };</div>
 </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
 </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}  <span class="comment">// close package namespace</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}  <span class="comment">// close enterprise namespace</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html">BloombergLP::bmqpi::DTSpan::Baggage</a></div><div class="ttdoc">A set of key-values used to describe a DTSpan.</div><div class="ttdef"><b>Definition</b> bmqpi_dtspan.h:66</div></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}  <span class="comment">// close package namespace</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}  <span class="comment">// close enterprise namespace</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html">BloombergLP::bmqpi::DTSpan::Baggage</a></div><div class="ttdoc">A set of key-values used to describe a DTSpan.</div><div class="ttdef"><b>Definition</b> bmqpi_dtspan.h:65</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_a2881704c157c70e2304e49c027168b96"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a2881704c157c70e2304e49c027168b96">BloombergLP::bmqpi::DTSpan::Baggage::get</a></div><div class="ttdeci">bsl::string_view get(const bsl::string &amp;key, const bsl::string_view &amp;dflt=&quot;&quot;) const</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_a5e5d85fea1379e67cd1e1a9ed9ae09f0"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a5e5d85fea1379e67cd1e1a9ed9ae09f0">BloombergLP::bmqpi::DTSpan::Baggage::erase</a></div><div class="ttdeci">bool erase(const bsl::string &amp;key)</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_a7005eae216ca0f1c613a78598694aeeb"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a7005eae216ca0f1c613a78598694aeeb">BloombergLP::bmqpi::DTSpan::Baggage::has</a></div><div class="ttdeci">bool has(const bsl::string &amp;key) const</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_a89cf997ffec89948a39241554407299b"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">BloombergLP::bmqpi::DTSpan::Baggage::const_iterator</a></div><div class="ttdeci">MapType::const_iterator const_iterator</div><div class="ttdef"><b>Definition</b> bmqpi_dtspan.h:76</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_a89cf997ffec89948a39241554407299b"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#a89cf997ffec89948a39241554407299b">BloombergLP::bmqpi::DTSpan::Baggage::const_iterator</a></div><div class="ttdeci">MapType::const_iterator const_iterator</div><div class="ttdef"><b>Definition</b> bmqpi_dtspan.h:75</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_ad9da9662f84816b0604e10fb81f6166b"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ad9da9662f84816b0604e10fb81f6166b">BloombergLP::bmqpi::DTSpan::Baggage::Baggage</a></div><div class="ttdeci">Baggage(bslma::Allocator *allocator=0)</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_ae41106ce227f61c71683fbc10781488a"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae41106ce227f61c71683fbc10781488a">BloombergLP::bmqpi::DTSpan::Baggage::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">Returns a const-iterator used to iterate over key-values.</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_ae69ceee9abf973d26460491f6a114405"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae69ceee9abf973d26460491f6a114405">BloombergLP::bmqpi::DTSpan::Baggage::put</a></div><div class="ttdeci">void put(const bsl::string_view &amp;key, const bsl::string_view &amp;value)</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage_html_af1e7ecea430f906f90395c1dbb402b0d"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#af1e7ecea430f906f90395c1dbb402b0d">BloombergLP::bmqpi::DTSpan::Baggage::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">Returns a const-iterator representing the end of key-values.</div></div>
-<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_html"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan.html">BloombergLP::bmqpi::DTSpan</a></div><div class="ttdoc">A pure interface for representing a span of a distributed trace.</div><div class="ttdef"><b>Definition</b> bmqpi_dtspan.h:47</div></div>
+<div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_html"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan.html">BloombergLP::bmqpi::DTSpan</a></div><div class="ttdoc">A pure interface for representing a span of a distributed trace.</div><div class="ttdef"><b>Definition</b> bmqpi_dtspan.h:46</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_html_a936df7f4679a43f2fe8850bae4b43f62"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a936df7f4679a43f2fe8850bae4b43f62">BloombergLP::bmqpi::DTSpan::operation</a></div><div class="ttdeci">virtual bsl::string_view operation() const =0</div><div class="ttdoc">Returns the name of the operation that this DTSpan represents.</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqpi_1_1DTSpan_html_a94c66598d15f52e2fb339006c6c36ac4"><div class="ttname"><a href="classBloombergLP_1_1bmqpi_1_1DTSpan.html#a94c66598d15f52e2fb339006c6c36ac4">BloombergLP::bmqpi::DTSpan::~DTSpan</a></div><div class="ttdeci">virtual ~DTSpan()</div><div class="ttdoc">Destructor.</div></div>
-<div class="ttc" id="anamespaceBloombergLP_html"><div class="ttname"><a href="namespaceBloombergLP.html">BloombergLP</a></div><div class="ttdef"><b>Definition</b> bmqa_abstractsession.h:42</div></div>
+<div class="ttc" id="anamespaceBloombergLP_html"><div class="ttname"><a href="namespaceBloombergLP.html">BloombergLP</a></div><div class="ttdef"><b>Definition</b> bmqa_abstractsession.h:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

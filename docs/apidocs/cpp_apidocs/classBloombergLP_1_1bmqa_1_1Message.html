@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -146,6 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a566651ed95a9e82ac1d286626cb1ea5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b36d708dacd65a75e1d885009cf6c8" id="r_ae6b36d708dacd65a75e1d885009cf6c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html#ae6b36d708dacd65a75e1d885009cf6c8">dataSize</a> () const</td></tr>
 <tr class="separator:ae6b36d708dacd65a75e1d885009cf6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578a9161a9c55165ef94e8941aa6a0ff" id="r_a578a9161a9c55165ef94e8941aa6a0ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html#a578a9161a9c55165ef94e8941aa6a0ff">totalSize</a> () const</td></tr>
+<tr class="separator:a578a9161a9c55165ef94e8941aa6a0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d9baad8ec080293075ddaaa687e45f" id="r_a65d9baad8ec080293075ddaaa687e45f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html#a65d9baad8ec080293075ddaaa687e45f">hasProperties</a> () const</td></tr>
 <tr class="separator:a65d9baad8ec080293075ddaaa687e45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2012cfab817c05b304e06b49337adde" id="r_ae2012cfab817c05b304e06b49337adde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html#ae2012cfab817c05b304e06b49337adde">loadProperties</a> (<a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">MessageProperties</a> *buffer) const</td></tr>
@@ -236,7 +238,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the payload of this message to the specified <code>length</code> bytes starting at the specified <code>data</code> address. The behavior is undefined unless <code>data</code> is non-null and <code>length</code> is greater than zero. Note that payload pointed to by <code>data</code> is <em>not</em> copied right away, and should not be destroyed or modified until this message has been packed (see <code><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html" title="A builder for MessageEvent objects.">bmqa::MessageEventBuilder</a></code> component level documentation for correct usage).</p>
+<p>Set the payload of this message to the specified <code>length</code> bytes starting at the specified <code>data</code> address. The behavior is undefined unless <code>data</code> is non-null and <code>0 &lt; length &lt;= INT_MAX</code>. Note that payload pointed to by <code>data</code> is <em>not</em> copied right away, and should not be destroyed or modified until this message has been packed (see <code><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html" title="A builder for MessageEvent objects.">bmqa::MessageEventBuilder</a></code> component level documentation for correct usage).</p>
 <p>This method is deprecated, please use <code><a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html#ac8656c868bb0c69fa910c2905a4cddcd">setDataRef()</a></code> instead. </p>
 
 <p class="reference">References <a class="el" href="classBloombergLP_1_1bmqa_1_1Message.html#ac8656c868bb0c69fa910c2905a4cddcd">setDataRef()</a>.</p>
@@ -289,7 +291,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the payload of this message to the specified <code>length</code> bytes starting at the specified <code>data</code> address. The behavior is undefined unless <code>data</code> is non-null and <code>length</code> is greater than zero. Note that payload pointed to by <code>data</code> is <em>not</em> copied right away, and should not be destroyed or modified until this message has been packed (see <code><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html" title="A builder for MessageEvent objects.">bmqa::MessageEventBuilder</a></code> component level documentation for correct usage). </p>
+<p>Set the payload of this message to the specified <code>length</code> bytes starting at the specified <code>data</code> address. The behavior is undefined unless <code>data</code> is non-null and <code>0 &lt; length &lt;= INT_MAX</code>. Note that payload pointed to by <code>data</code> is <em>not</em> copied right away, and should not be destroyed or modified until this message has been packed (see <code><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html" title="A builder for MessageEvent objects.">bmqa::MessageEventBuilder</a></code> component level documentation for correct usage). </p>
 
 </div>
 </div>
@@ -593,7 +595,25 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the number of bytes in the payload. The behaviour is undefined unless this instance represents a <code>PUT</code> or a <code>PUSH</code> message. Note that for efficiency, application should fetch payload size once and cache the value, instead of invoking this method multiple times on a message. </p>
+<p>Return the number of bytes in the payload. The behavior is undefined unless this instance represents a <code>PUT</code> or a <code>PUSH</code> message. </p>
+
+</div>
+</div>
+<a id="a578a9161a9c55165ef94e8941aa6a0ff" name="a578a9161a9c55165ef94e8941aa6a0ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578a9161a9c55165ef94e8941aa6a0ff">&#9670;&#160;</a></span>totalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BloombergLP::bmqa::Message::totalSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the size (in bytes) of wire representation for the message. The behavior is undefined unless this instance represents a <code>PUT</code> or a <code>PUSH</code> message. </p>
 
 </div>
 </div>

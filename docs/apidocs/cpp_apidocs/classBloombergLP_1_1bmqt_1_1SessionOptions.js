@@ -1,5 +1,6 @@
 var classBloombergLP_1_1bmqt_1_1SessionOptions =
 [
+    [ "AuthnCredentialCb", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016", null ],
     [ "SessionOptions", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a255bd2874882db309fc98bdfcfa898a7", null ],
     [ "SessionOptions", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ae9934f5717db17ab6faa6b4a292cb318", null ],
     [ "setBrokerUri", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a6d66d9b77fd96366f363c688766f6601", null ],
@@ -13,10 +14,13 @@ var classBloombergLP_1_1bmqt_1_1SessionOptions =
     [ "setOpenQueueTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a5b9bf86e49c8ed6ae8b454281f23d443", null ],
     [ "setConfigureQueueTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a406d1f9a2e777d52715e2ebd1079e41f", null ],
     [ "setCloseQueueTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a1fa26f48d062e50b6bc35f2e70ba61ad", null ],
+    [ "setAuthnCredentialCb", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a2211af2d3ffd786dd5eb0f60774f9bf9", null ],
     [ "setHostHealthMonitor", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a79a67fc682dfab108308f4dca40cc06c", null ],
     [ "setTraceOptions", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a6ee3200d8232342d13a55cf50ad3e34d", null ],
     [ "configureEventQueue", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a930ce7dc9cc2e0833d8dff527b3112fa", null ],
     [ "configureEventQueue", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a5079adfe01673608087500302d85d701", null ],
+    [ "setUserAgentPrefix", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#aab536e6340590b99e8c26137bb3727a5", null ],
+    [ "setChannelWriteTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#af8fe1fdc0f45bc1c6eaac63525cb1d05", null ],
     [ "brokerUri", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#aafdced0acc315ea53c517ac036dfdeb2", null ],
     [ "processNameOverride", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a74bf5a00824996edb4ababbebda3fe35", null ],
     [ "numProcessingThreads", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a475508e5b46d2a1b3bd0db6abd54211b", null ],
@@ -28,14 +32,18 @@ var classBloombergLP_1_1bmqt_1_1SessionOptions =
     [ "openQueueTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ac35d56be5e2c239065055a961c35f55a", null ],
     [ "configureQueueTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#aae8b59b49a9f6caa2851e59f47b28445", null ],
     [ "closeQueueTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a3cc5629d0f961d16743ccb02303ffec3", null ],
+    [ "authnCredentialCb", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a3beeab27593187f7ddc6acde2166355b", null ],
     [ "hostHealthMonitor", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a7dae3ea3f872a4051832f5c9895f80d5", null ],
     [ "traceContext", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ad8539ecc76aa1f44d7e1ac4384bf7ff3", null ],
     [ "tracer", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ab993eccd221e00062e1571a3ae78f904", null ],
     [ "eventQueueLowWatermark", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ad8a7443384de987d02c4e3512c5a8ea3", null ],
     [ "eventQueueHighWatermark", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a4286f0d9df8bc0ffa3232c15f75e19ce", null ],
     [ "eventQueueSize", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a2955049bad74660af651fc4c84377cba", null ],
+    [ "userAgentPrefix", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8d65ac9c6d6be72f6ec46c4e6c89df49", null ],
+    [ "channelWriteTimeout", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a4ebdbe217de05c8234e5e1802fbb743b", null ],
     [ "print", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a56fd74fe58ac5eba70cd2ebd3dff091e", null ],
     [ "k_BROKER_DEFAULT_URI", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a4bd9231e3a225dfb568b15be6f11359b", null ],
     [ "k_BROKER_DEFAULT_PORT", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ab58cccb280d4c12151bdc1dfbc8a8559", null ],
-    [ "k_QUEUE_OPERATION_DEFAULT_TIMEOUT", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8cc1f347fab4f8fce9b4405c84ccb9d7", null ]
+    [ "k_QUEUE_OPERATION_DEFAULT_TIMEOUT", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8cc1f347fab4f8fce9b4405c84ccb9d7", null ],
+    [ "k_CHANNEL_WRITE_DEFAULT_TIMEOUT_SEC", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a926a6951e3eae92524412709f6123807", null ]
 ];

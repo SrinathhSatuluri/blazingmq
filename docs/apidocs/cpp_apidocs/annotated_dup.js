@@ -31,6 +31,7 @@ var annotated_dup =
       ] ],
       [ "bmqt", "namespaceBloombergLP_1_1bmqt.html", [
         [ "AckResult", "structBloombergLP_1_1bmqt_1_1AckResult.html", "structBloombergLP_1_1bmqt_1_1AckResult" ],
+        [ "AuthnCredential", "classBloombergLP_1_1bmqt_1_1AuthnCredential.html", "classBloombergLP_1_1bmqt_1_1AuthnCredential" ],
         [ "CloseQueueResult", "structBloombergLP_1_1bmqt_1_1CloseQueueResult.html", "structBloombergLP_1_1bmqt_1_1CloseQueueResult" ],
         [ "CompressionAlgorithmType", "structBloombergLP_1_1bmqt_1_1CompressionAlgorithmType.html", "structBloombergLP_1_1bmqt_1_1CompressionAlgorithmType" ],
         [ "ConfigureQueueResult", "structBloombergLP_1_1bmqt_1_1ConfigureQueueResult.html", "structBloombergLP_1_1bmqt_1_1ConfigureQueueResult" ],

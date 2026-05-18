@@ -14,7 +14,7 @@ var searchData=
   ['processnameoverride_11',['processNameOverride',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a74bf5a00824996edb4ababbebda3fe35',1,'BloombergLP::bmqt::SessionOptions']]],
   ['property_20names_12',['Restrictions on Property Names',['../bmqa__messageproperties_8h.html#bmqa_messageproperties_namerestrictions',1,'']]],
   ['property_20values_13',['Restrictions on Property Values',['../bmqa__messageproperties_8h.html#bmqa_messageproperties_valuerestrictions',1,'']]],
-  ['propertytype_14',['propertytype',['../classBloombergLP_1_1bmqa_1_1MessageProperties.html#a0b634da4ea8e6b6837a9ec686b813513',1,'BloombergLP::bmqa::MessageProperties::propertyType()'],['../structBloombergLP_1_1bmqt_1_1PropertyType.html',1,'BloombergLP::bmqt::PropertyType']]],
+  ['propertytype_14',['propertytype',['../classBloombergLP_1_1bmqa_1_1MessageProperties.html#a9654ad8e173364bc093d71ba49ecc09a',1,'BloombergLP::bmqa::MessageProperties::propertyType()'],['../structBloombergLP_1_1bmqt_1_1PropertyType.html',1,'BloombergLP::bmqt::PropertyType']]],
   ['pushmessageparams_15',['pushmessageparams',['../structBloombergLP_1_1bmqa_1_1MockSessionUtil_1_1PushMessageParams.html#a548eb748b5170857be12f5f52dfb99fe',1,'BloombergLP::bmqa::MockSessionUtil::PushMessageParams::PushMessageParams()'],['../structBloombergLP_1_1bmqa_1_1MockSessionUtil_1_1PushMessageParams.html',1,'BloombergLP::bmqa::MockSessionUtil::PushMessageParams']]],
   ['put_16',['put',['../classBloombergLP_1_1bmqpi_1_1DTSpan_1_1Baggage.html#ae69ceee9abf973d26460491f6a114405',1,'BloombergLP::bmqpi::DTSpan::Baggage']]]
 ];

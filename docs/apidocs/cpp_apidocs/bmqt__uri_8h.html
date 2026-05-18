@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -101,8 +101,9 @@ $(document).ready(function(){initNavTree('bmqt__uri_8h.html',''); initResizable(
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;ball_log.h&gt;</code><br />
 <code>#include &lt;bsl_cstddef.h&gt;</code><br />
-<code>#include &lt;bsl_iosfwd.h&gt;</code><br />
+<code>#include &lt;bsl_ostream.h&gt;</code><br />
 <code>#include &lt;bsl_string.h&gt;</code><br />
+<code>#include &lt;bsla_maybeunused.h&gt;</code><br />
 <code>#include &lt;bslh_hash.h&gt;</code><br />
 <code>#include &lt;bslma_usesbslmaallocator.h&gt;</code><br />
 <code>#include &lt;bslmf_nestedtraitdeclaration.h&gt;</code><br />
@@ -116,6 +117,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqt_1_1UriParser.html">BloombergLP::bmqt::UriParser</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility namespace of methods for parsing URI strings into <code><a class="el" href="classBloombergLP_1_1bmqt_1_1Uri.html" title="Value semantic type representing a URI.">Uri</a></code> objects.  <a href="structBloombergLP_1_1bmqt_1_1UriParser.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqt_1_1UriParser_1_1UriParseResult.html">BloombergLP::bmqt::UriParser::UriParseResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1UriBuilder.html">BloombergLP::bmqt::UriBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,10 +167,7 @@ URI format</h1>
 </ul>
 <h1><a class="anchor" id="bmqt_uri_ex1"></a>
 Usage Example 1</h1>
-<p>First, call the <code>initialize</code> method of the <a class="el" href="structBloombergLP_1_1bmqt_1_1UriParser.html">bmqt::UriParser</a>. This call is only needed one time; you can call it when your task starts.</p>
-<p>Note that the <code>bmq</code> library takes care of that, so users of <code>bmq</code> don't have to explicitly do it themselves.</p>
-<div class="fragment"><div class="line">bmqt::UriParser::initialize();</div>
-</div><!-- fragment --><p>Then, parse a URI string created on the stack to populate a <a class="el" href="classBloombergLP_1_1bmqt_1_1Uri.html">bmqt::Uri</a> object. The parse function takes an optional error string which is populated with a short error message if the URI is not formatted correctly.</p>
+<p>Parse a URI string created on the stack to populate a <a class="el" href="classBloombergLP_1_1bmqt_1_1Uri.html">bmqt::Uri</a> object. The parse function takes an optional error string which is populated with a short error message if the URI is not formatted correctly.</p>
 <div class="fragment"><div class="line">bsl::string input = <span class="stringliteral">&quot;bmq://my.domain/queue&quot;</span>;</div>
 <div class="line">bmqt::Uri   uri(allocator);</div>
 <div class="line">bsl::string errorDescription;</div>
@@ -192,7 +192,7 @@ Usage Example 2</h1>
 Thread Safety</h1>
 <ul>
 <li><a class="el" href="classBloombergLP_1_1bmqt_1_1UriBuilder.html">bmqt::UriBuilder</a> is NOT thread safe.</li>
-<li><a class="el" href="structBloombergLP_1_1bmqt_1_1UriParser.html">bmqt::UriParser</a> should be thread safe: the component depends on <code>bdepcre_regex</code> that is a wrapper around "pcre.h". See <a href="http://www.pcre.org/pcre.txt">http://www.pcre.org/pcre.txt</a>. </li>
+<li><a class="el" href="structBloombergLP_1_1bmqt_1_1UriParser.html">bmqt::UriParser</a> is thread safe. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

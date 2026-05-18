@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['booltype_0',['booltype',['../classBloombergLP_1_1bmqa_1_1CloseQueueStatus.html#a2ea2e674d96b19c4a9c82fdffbf2f3b8',1,'BloombergLP::bmqa::CloseQueueStatus::BoolType'],['../classBloombergLP_1_1bmqa_1_1OpenQueueStatus.html#a2b3f970a54c977703e857b630e166987',1,'BloombergLP::bmqa::OpenQueueStatus::BoolType']]]
+  ['authncredentialcb_0',['AuthnCredentialCb',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016',1,'BloombergLP::bmqt::SessionOptions']]]
 ];

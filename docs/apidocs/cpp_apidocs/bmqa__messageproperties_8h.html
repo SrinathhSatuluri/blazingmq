@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('bmqa__messageproperties_8h.html',''); 
 <code>#include &lt;bdlbb_blob.h&gt;</code><br />
 <code>#include &lt;bsl_cstdint.h&gt;</code><br />
 <code>#include &lt;bsl_ostream.h&gt;</code><br />
+<code>#include &lt;bsl_span.h&gt;</code><br />
 <code>#include &lt;bsl_string.h&gt;</code><br />
 <code>#include &lt;bsl_vector.h&gt;</code><br />
 <code>#include &lt;bslma_allocator.h&gt;</code><br />
@@ -135,7 +136,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad238ed1340661b5ca3fc93099aa4d124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">bmqa::MessageProperties</a> provides a VST representing message properties. Message properties are a collection of name-value pairs that producer can associate with a message, and consumer can retrieve from the corresponding message. In order to keep their usage flexible, no schema is enforced for the message properties, and their format (names and data types) should be negotiated by producers and consumers. Message properties can be used for routing, pipelining or filtering messages within the application. It can be efficient to specify such message attributes in the properties instead of the message payload, because application does not have to decode entire payload to retrieve these attributes. <a class="el" href="classBloombergLP_1_1bmqa_1_1MessagePropertiesIterator.html">bmqa::MessagePropertiesIterator</a> provides a mechanism to iterate over all the properties of a <a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">bmqa::MessageProperties</a> object.</p>
+<div class="textblock"><p><a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">bmqa::MessageProperties</a> provides a VST representing message properties. Message properties are a collection of name-value pairs that producer can associate with a message, and consumer can retrieve from the corresponding message. In order to keep their usage flexible, no schema is enforced for the message properties, and their format (names and data types) should be negotiated by producers and consumers. Message properties can be used for routing, pipelining or filtering messages within the application. It can be efficient to specify such message attributes in the properties instead of the message payload, because the application does not have to decode entire payload to retrieve these attributes. <a class="el" href="classBloombergLP_1_1bmqa_1_1MessagePropertiesIterator.html">bmqa::MessagePropertiesIterator</a> provides a mechanism to iterate over all the properties of a <a class="el" href="classBloombergLP_1_1bmqa_1_1MessageProperties.html">bmqa::MessageProperties</a> object.</p>
 <h1><a class="anchor" id="bmqa_messageproperties_namerestrictions"></a>
 Restrictions on Property Names</h1>
 <ul>

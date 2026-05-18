@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -1423,7 +1423,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <h2>Queue manipulation </h2>
-<p>Return the next available event received for this session. If there is no event available, this method blocks for up to the optionally specified <code>timeout</code> time interval for an event to arrive. An empty time interval for <code>timeout</code> (the default) indicates that the method should not timeout (the method will not return until the next event is available). Return a <code><a class="el" href="classBloombergLP_1_1bmqa_1_1SessionEvent.html" title="An event related to the operation of a Session.">bmqa::SessionEvent</a></code> of type <code><a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a8680401b9e7904a993ff6a20526ead45">bmqt::SessionEventType::e_TIMEOUT</a></code> if a timeout was specified and that timeout expired before any event was received. Note that this method can only be used if the session is in synchronous mode (ie not using the EventHandler). The behavior is undefined unless the session was started. </p>
+<p>Return the next available event received for this session. If there is no event available, this method blocks for up to the optionally specified <code>timeout</code> time interval for an event to arrive. An empty time interval for <code>timeout</code> (the default) indicates that the method should not timeout (the method will not return until the next event is available). Return a <code><a class="el" href="classBloombergLP_1_1bmqa_1_1SessionEvent.html" title="An event related to the operation of a Session.">bmqa::SessionEvent</a></code> of type <code><a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431a8680401b9e7904a993ff6a20526ead45" title="Time out of the operation.">bmqt::SessionEventType::e_TIMEOUT</a></code> if a timeout was specified and that timeout expired before any event was received. Note that this method can only be used if the session is in synchronous mode (ie not using the EventHandler). The behavior is undefined unless the session was started. </p>
 
 <p>Reimplemented from <a class="el" href="classBloombergLP_1_1bmqa_1_1AbstractSession.html#af3b152737ca4ff1d745721d00bb11677">BloombergLP::bmqa::AbstractSession</a>.</p>
 
@@ -1573,8 +1573,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <h2>Debugging related </h2>
-<p>Configure this session instance to dump messages to the installed logger at <code>ball::Severity::e_INFO</code> level according to the specified <code>command</code> that should adhere to the following pattern: </p><div class="fragment"><div class="line">IN|OUT|PUSH|ACK|PUT|CONFIRM ON|OFF|100|10s</div>
-</div><!-- fragment --><p> where each token has a specific meaning:</p><ul>
+<p>Configure this session instance to dump messages to the installed logger at <code>ball::Severity::e_INFO</code> level according to the specified <code>command</code> that should adhere to the following pattern:</p>
+<div class="fragment"><div class="line">IN|OUT|PUSH|ACK|PUT|CONFIRM ON|OFF|100|10s</div>
+</div><!-- fragment --><p>where each token has a specific meaning:</p><ul>
 <li><b>IN</b> : incoming (<code>PUSH</code> and <code>ACK</code>) events</li>
 <li><b>OUT</b> : outgoing (<code>PUT</code> and <code>CONFIRM</code>) events</li>
 <li><b>PUSH</b> : incoming <code>PUSH</code> events</li>

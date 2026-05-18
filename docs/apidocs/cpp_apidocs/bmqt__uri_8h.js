@@ -2,6 +2,7 @@ var bmqt__uri_8h =
 [
     [ "BloombergLP::bmqt::Uri", "classBloombergLP_1_1bmqt_1_1Uri.html", "classBloombergLP_1_1bmqt_1_1Uri" ],
     [ "BloombergLP::bmqt::UriParser", "structBloombergLP_1_1bmqt_1_1UriParser.html", "structBloombergLP_1_1bmqt_1_1UriParser" ],
+    [ "BloombergLP::bmqt::UriParser::UriParseResult", "structBloombergLP_1_1bmqt_1_1UriParser_1_1UriParseResult.html", "structBloombergLP_1_1bmqt_1_1UriParser_1_1UriParseResult" ],
     [ "BloombergLP::bmqt::UriBuilder", "classBloombergLP_1_1bmqt_1_1UriBuilder.html", "classBloombergLP_1_1bmqt_1_1UriBuilder" ],
     [ "operator==", "bmqt__uri_8h.html#ac48cbe60996c895ee24d14d2cc8bff01", null ],
     [ "operator!=", "bmqt__uri_8h.html#add32cc6a88489f15691c3d7f0958c3ab", null ],

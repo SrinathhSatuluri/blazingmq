@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;b6028b29b733bc7541593d2905a5f79a9f0192fc</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;35cdc2bd59198f1b6ba856361cba2edf4121d5de</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('classBloombergLP_1_1bmqt_1_1SessionOpt
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classBloombergLP_1_1bmqt_1_1SessionOptions-members.html">List of all members</a>  </div>
@@ -99,6 +100,11 @@ $(document).ready(function(){initNavTree('classBloombergLP_1_1bmqt_1_1SessionOpt
 
 <p><code>#include &lt;<a class="el" href="bmqt__sessionoptions_8h_source.html">bmqt_sessionoptions.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8dc726653a5f599f9da80320ff7b8016" id="r_a8dc726653a5f599f9da80320ff7b8016"><td class="memItemLeft" align="right" valign="top">typedef bsl::function&lt; bsl::optional&lt; <a class="el" href="classBloombergLP_1_1bmqt_1_1AuthnCredential.html">AuthnCredential</a> &gt;(bsl::ostream &amp;error)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016">AuthnCredentialCb</a></td></tr>
+<tr class="separator:a8dc726653a5f599f9da80320ff7b8016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a255bd2874882db309fc98bdfcfa898a7" id="r_a255bd2874882db309fc98bdfcfa898a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a255bd2874882db309fc98bdfcfa898a7">SessionOptions</a> (bslma::Allocator *allocator=0)</td></tr>
@@ -134,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fa26f48d062e50b6bc35f2e70ba61ad" id="r_a1fa26f48d062e50b6bc35f2e70ba61ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a1fa26f48d062e50b6bc35f2e70ba61ad">setCloseQueueTimeout</a> (const bsls::TimeInterval &amp;value)</td></tr>
 <tr class="memdesc:a1fa26f48d062e50b6bc35f2e70ba61ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timeout for closing a queue to the specified <code>value</code>.  <br /></td></tr>
 <tr class="separator:a1fa26f48d062e50b6bc35f2e70ba61ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2211af2d3ffd786dd5eb0f60774f9bf9" id="r_a2211af2d3ffd786dd5eb0f60774f9bf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a2211af2d3ffd786dd5eb0f60774f9bf9">setAuthnCredentialCb</a> (const <a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016">AuthnCredentialCb</a> &amp;value)</td></tr>
+<tr class="memdesc:a2211af2d3ffd786dd5eb0f60774f9bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the authentication credential callback to the specified <code>value</code>.  <br /></td></tr>
+<tr class="separator:a2211af2d3ffd786dd5eb0f60774f9bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a67fc682dfab108308f4dca40cc06c" id="r_a79a67fc682dfab108308f4dca40cc06c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a79a67fc682dfab108308f4dca40cc06c">setHostHealthMonitor</a> (const bsl::shared_ptr&lt; <a class="el" href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html">bmqpi::HostHealthMonitor</a> &gt; &amp;monitor)</td></tr>
 <tr class="separator:a79a67fc682dfab108308f4dca40cc06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee3200d8232342d13a55cf50ad3e34d" id="r_a6ee3200d8232342d13a55cf50ad3e34d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a6ee3200d8232342d13a55cf50ad3e34d">setTraceOptions</a> (const bsl::shared_ptr&lt; <a class="el" href="classBloombergLP_1_1bmqpi_1_1DTContext.html">bmqpi::DTContext</a> &gt; &amp;dtContext, const bsl::shared_ptr&lt; <a class="el" href="classBloombergLP_1_1bmqpi_1_1DTTracer.html">bmqpi::DTTracer</a> &gt; &amp;dtTracer)</td></tr>
@@ -142,6 +151,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a930ce7dc9cc2e0833d8dff527b3112fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5079adfe01673608087500302d85d701" id="r_a5079adfe01673608087500302d85d701"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a5079adfe01673608087500302d85d701">configureEventQueue</a> (int lowWatermark, int highWatermark)</td></tr>
 <tr class="separator:a5079adfe01673608087500302d85d701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab536e6340590b99e8c26137bb3727a5" id="r_aab536e6340590b99e8c26137bb3727a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#aab536e6340590b99e8c26137bb3727a5">setUserAgentPrefix</a> (bsl::string_view value)</td></tr>
+<tr class="separator:aab536e6340590b99e8c26137bb3727a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8fe1fdc0f45bc1c6eaac63525cb1d05" id="r_af8fe1fdc0f45bc1c6eaac63525cb1d05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#af8fe1fdc0f45bc1c6eaac63525cb1d05">setChannelWriteTimeout</a> (const bsls::TimeInterval &amp;value)</td></tr>
+<tr class="separator:af8fe1fdc0f45bc1c6eaac63525cb1d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafdced0acc315ea53c517ac036dfdeb2" id="r_aafdced0acc315ea53c517ac036dfdeb2"><td class="memItemLeft" align="right" valign="top">const bsl::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#aafdced0acc315ea53c517ac036dfdeb2">brokerUri</a> () const</td></tr>
 <tr class="memdesc:aafdced0acc315ea53c517ac036dfdeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the broker URI.  <br /></td></tr>
 <tr class="separator:aafdced0acc315ea53c517ac036dfdeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +188,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cc5629d0f961d16743ccb02303ffec3" id="r_a3cc5629d0f961d16743ccb02303ffec3"><td class="memItemLeft" align="right" valign="top">const bsls::TimeInterval &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a3cc5629d0f961d16743ccb02303ffec3">closeQueueTimeout</a> () const</td></tr>
 <tr class="memdesc:a3cc5629d0f961d16743ccb02303ffec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timeout for closing a queue.  <br /></td></tr>
 <tr class="separator:a3cc5629d0f961d16743ccb02303ffec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3beeab27593187f7ddc6acde2166355b" id="r_a3beeab27593187f7ddc6acde2166355b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016">AuthnCredentialCb</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a3beeab27593187f7ddc6acde2166355b">authnCredentialCb</a> () const</td></tr>
+<tr class="memdesc:a3beeab27593187f7ddc6acde2166355b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the authentication credential callback.  <br /></td></tr>
+<tr class="separator:a3beeab27593187f7ddc6acde2166355b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dae3ea3f872a4051832f5c9895f80d5" id="r_a7dae3ea3f872a4051832f5c9895f80d5"><td class="memItemLeft" align="right" valign="top">const bsl::shared_ptr&lt; <a class="el" href="classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html">bmqpi::HostHealthMonitor</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a7dae3ea3f872a4051832f5c9895f80d5">hostHealthMonitor</a> () const</td></tr>
 <tr class="separator:a7dae3ea3f872a4051832f5c9895f80d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8539ecc76aa1f44d7e1ac4384bf7ff3" id="r_ad8539ecc76aa1f44d7e1ac4384bf7ff3"><td class="memItemLeft" align="right" valign="top">const bsl::shared_ptr&lt; <a class="el" href="classBloombergLP_1_1bmqpi_1_1DTContext.html">bmqpi::DTContext</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#ad8539ecc76aa1f44d7e1ac4384bf7ff3">traceContext</a> () const</td></tr>
@@ -189,6 +205,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4286f0d9df8bc0ffa3232c15f75e19ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2955049bad74660af651fc4c84377cba" id="r_a2955049bad74660af651fc4c84377cba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a2955049bad74660af651fc4c84377cba">eventQueueSize</a> () const</td></tr>
 <tr class="separator:a2955049bad74660af651fc4c84377cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d65ac9c6d6be72f6ec46c4e6c89df49" id="r_a8d65ac9c6d6be72f6ec46c4e6c89df49"><td class="memItemLeft" align="right" valign="top">const bsl::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8d65ac9c6d6be72f6ec46c4e6c89df49">userAgentPrefix</a> () const</td></tr>
+<tr class="memdesc:a8d65ac9c6d6be72f6ec46c4e6c89df49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user agent prefix.  <br /></td></tr>
+<tr class="separator:a8d65ac9c6d6be72f6ec46c4e6c89df49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebdbe217de05c8234e5e1802fbb743b" id="r_a4ebdbe217de05c8234e5e1802fbb743b"><td class="memItemLeft" align="right" valign="top">const bsls::TimeInterval &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a4ebdbe217de05c8234e5e1802fbb743b">channelWriteTimeout</a> () const</td></tr>
+<tr class="memdesc:a4ebdbe217de05c8234e5e1802fbb743b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timeout to block <code>post</code> when at high watermark.  <br /></td></tr>
+<tr class="separator:a4ebdbe217de05c8234e5e1802fbb743b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56fd74fe58ac5eba70cd2ebd3dff091e" id="r_a56fd74fe58ac5eba70cd2ebd3dff091e"><td class="memItemLeft" align="right" valign="top">bsl::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a56fd74fe58ac5eba70cd2ebd3dff091e">print</a> (bsl::ostream &amp;stream, int level=0, int spacesPerLevel=4) const</td></tr>
 <tr class="separator:a56fd74fe58ac5eba70cd2ebd3dff091e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -202,10 +224,28 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:ab58cccb280d4c12151bdc1dfbc8a8559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc1f347fab4f8fce9b4405c84ccb9d7" id="r_a8cc1f347fab4f8fce9b4405c84ccb9d7"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8cc1f347fab4f8fce9b4405c84ccb9d7">k_QUEUE_OPERATION_DEFAULT_TIMEOUT</a></td></tr>
 <tr class="separator:a8cc1f347fab4f8fce9b4405c84ccb9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926a6951e3eae92524412709f6123807" id="r_a926a6951e3eae92524412709f6123807"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a926a6951e3eae92524412709f6123807">k_CHANNEL_WRITE_DEFAULT_TIMEOUT_SEC</a> = 5</td></tr>
+<tr class="separator:a926a6951e3eae92524412709f6123807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>value-semantic type for options to configure a session with a BlazingMQ broker </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8dc726653a5f599f9da80320ff7b8016" name="a8dc726653a5f599f9da80320ff7b8016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dc726653a5f599f9da80320ff7b8016">&#9670;&#160;</a></span>AuthnCredentialCb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bsl::function&lt;bsl::optional&lt;<a class="el" href="classBloombergLP_1_1bmqt_1_1AuthnCredential.html">AuthnCredential</a>&gt;(bsl::ostream&amp; error)&gt; <a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016">BloombergLP::bmqt::SessionOptions::AuthnCredentialCb</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function type used to obtain authentication credentials (mechanism and data) for authenticating with the broker. The function should return an <code><a class="el" href="classBloombergLP_1_1bmqt_1_1AuthnCredential.html">AuthnCredential</a></code> object on success, or <code>bsl::nullopt</code> if an error occurs. Any error details should be written to the provided <code>error</code> stream. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a255bd2874882db309fc98bdfcfa898a7" name="a255bd2874882db309fc98bdfcfa898a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a255bd2874882db309fc98bdfcfa898a7">&#9670;&#160;</a></span>SessionOptions() <span class="overload">[1/2]</span></h2>
 
@@ -553,6 +593,32 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2211af2d3ffd786dd5eb0f60774f9bf9" name="a2211af2d3ffd786dd5eb0f60774f9bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2211af2d3ffd786dd5eb0f60774f9bf9">&#9670;&#160;</a></span>setAuthnCredentialCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp; BloombergLP::bmqt::SessionOptions::setAuthnCredentialCb </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016">AuthnCredentialCb</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a79a67fc682dfab108308f4dca40cc06c" name="a79a67fc682dfab108308f4dca40cc06c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79a67fc682dfab108308f4dca40cc06c">&#9670;&#160;</a></span>setHostHealthMonitor()</h2>
 
@@ -701,6 +767,61 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Configure the EventQueue notification watermarks thresholds with the specified <code>lowWatermark</code> and <code>highWatermark</code> value. Refer to the component level documentation for explanation of those watermarks. The behavior is undefined unless <code>lowWatermark &lt; highWatermark</code>. </p>
+
+</div>
+</div>
+<a id="aab536e6340590b99e8c26137bb3727a5" name="aab536e6340590b99e8c26137bb3727a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab536e6340590b99e8c26137bb3727a5">&#9670;&#160;</a></span>setUserAgentPrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp; BloombergLP::bmqt::SessionOptions::setUserAgentPrefix </td>
+          <td>(</td>
+          <td class="paramtype">bsl::string_view&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the user agent prefix to the specified <code>value</code>. This string is prefixed to a user agent constructed by <code>libbmq</code>. This is intended ONLY for libraries that wrap <code>libbmq</code> to identify themselves for broker telemetry. Applications that are directly using <code>libbmq</code> are encouraged not to set this.</p>
+<p>The behavior is undefined unless <code>value</code> consists of printable characters and <code>value.size() &lt; 128</code>. </p>
+
+</div>
+</div>
+<a id="af8fe1fdc0f45bc1c6eaac63525cb1d05" name="af8fe1fdc0f45bc1c6eaac63525cb1d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8fe1fdc0f45bc1c6eaac63525cb1d05">&#9670;&#160;</a></span>setChannelWriteTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html">SessionOptions</a> &amp; BloombergLP::bmqt::SessionOptions::setChannelWriteTimeout </td>
+          <td>(</td>
+          <td class="paramtype">const bsls::TimeInterval &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the timeout to block <code>post</code> when at high watermark. Zero means no blocking. </p>
 
 </div>
 </div>
@@ -997,6 +1118,31 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3beeab27593187f7ddc6acde2166355b" name="a3beeab27593187f7ddc6acde2166355b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3beeab27593187f7ddc6acde2166355b">&#9670;&#160;</a></span>authnCredentialCb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016">SessionOptions::AuthnCredentialCb</a> &amp; BloombergLP::bmqt::SessionOptions::authnCredentialCb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7dae3ea3f872a4051832f5c9895f80d5" name="a7dae3ea3f872a4051832f5c9895f80d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7dae3ea3f872a4051832f5c9895f80d5">&#9670;&#160;</a></span>hostHealthMonitor()</h2>
 
@@ -1158,6 +1304,58 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d65ac9c6d6be72f6ec46c4e6c89df49" name="a8d65ac9c6d6be72f6ec46c4e6c89df49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d65ac9c6d6be72f6ec46c4e6c89df49">&#9670;&#160;</a></span>userAgentPrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bsl::string &amp; BloombergLP::bmqt::SessionOptions::userAgentPrefix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceBloombergLP_1_1bmqt.html#a0e670a924ff24ea37e1e6041f15e1b7f">BloombergLP::bmqt::operator!=()</a>, and <a class="el" href="namespaceBloombergLP_1_1bmqt.html#a3cd71fd8e31a80980d1a2c73a2ee29ba">BloombergLP::bmqt::operator==()</a>.</p>
+
+</div>
+</div>
+<a id="a4ebdbe217de05c8234e5e1802fbb743b" name="a4ebdbe217de05c8234e5e1802fbb743b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebdbe217de05c8234e5e1802fbb743b">&#9670;&#160;</a></span>channelWriteTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bsls::TimeInterval &amp; BloombergLP::bmqt::SessionOptions::channelWriteTimeout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a56fd74fe58ac5eba70cd2ebd3dff091e" name="a56fd74fe58ac5eba70cd2ebd3dff091e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56fd74fe58ac5eba70cd2ebd3dff091e">&#9670;&#160;</a></span>print()</h2>
 
@@ -1262,6 +1460,28 @@ Static Public Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">        5 * bdlt::TimeUnitRatio::k_SECONDS_PER_MINUTE</div>
 </div><!-- fragment --><p>The default, and minimum recommended, value for queue operations (open, configure, close). </p>
+
+</div>
+</div>
+<a id="a926a6951e3eae92524412709f6123807" name="a926a6951e3eae92524412709f6123807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926a6951e3eae92524412709f6123807">&#9670;&#160;</a></span>k_CHANNEL_WRITE_DEFAULT_TIMEOUT_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int BloombergLP::bmqt::SessionOptions::k_CHANNEL_WRITE_DEFAULT_TIMEOUT_SEC = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
