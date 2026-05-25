@@ -80,10 +80,6 @@ def _alignment_bucket(f: Field, schema: Schema) -> int:
     return 8  # Complex types are pointer-aligned
 
 
-# Keep old name as alias for external imports
-_alignment_category = _alignment_bucket
-
-
 def _desc_type_key(decl_type: str) -> tuple:
     """Sort key for descending lexicographic order of C++ type names.
 

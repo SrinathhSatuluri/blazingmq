@@ -67,7 +67,9 @@ def _is_allocator_aware_type(type_name: str, schema: Schema) -> bool:
     return True
 
 
-def type_needs_allocator(t: ComplexType, schema: Schema) -> bool:
+def type_needs_allocator(
+    t: ComplexType, schema: Schema, _visited: set[str] | None = None
+) -> bool:
     """Determine if a ComplexType needs an allocator.
 
     A type needs an allocator if ANY of its fields:
@@ -75,7 +77,15 @@ def type_needs_allocator(t: ComplexType, schema: Schema) -> bool:
     - Is a bsl::vector<T>
     - Is a bdlb::NullableValue/NullableAllocatedValue of an allocator-aware type
     - Is another allocator-aware ComplexType
+
+    Uses a visited set to guard against infinite recursion on circular types.
     """
+    if _visited is None:
+        _visited = set()
+    if t.name in _visited:
+        return False
+    _visited.add(t.name)
+
     all_fields = t.fields + t.choices
 
     for f in all_fields:
@@ -95,7 +105,7 @@ def type_needs_allocator(t: ComplexType, schema: Schema) -> bool:
             if isinstance(resolved, EnumType):
                 continue
             if isinstance(resolved, ComplexType):
-                if type_needs_allocator(resolved, schema):
+                if type_needs_allocator(resolved, schema, _visited):
                     return True
 
     return False
