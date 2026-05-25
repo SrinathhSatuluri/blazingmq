@@ -18,7 +18,15 @@
 from __future__ import annotations
 
 from .emitter_h import _needs_pointer_storage
-from .model import ComplexType, EnumType, Field, FieldKind, Schema, TypeKind, XSD_TYPE_MAP
+from .model import (
+    ComplexType,
+    EnumType,
+    Field,
+    FieldKind,
+    Schema,
+    TypeKind,
+    XSD_TYPE_MAP,
+)
 from .naming import (
     make_banner,
     to_accessor_name,
@@ -32,6 +40,7 @@ from .ordering import sort_fields_by_alignment, topological_sort_types
 from .resolver import ResolvedField, resolve_field, type_needs_allocator
 from .hybrid import expand_hybrids
 from .writer import Writer
+
 
 def _build_includes_cpp(schema: Schema) -> str:
     """Build the cpp include block, only emitting headers for types used."""
@@ -254,8 +263,14 @@ def _default_value_literal(rf: ResolvedField, f: Field) -> str:
     val = f.default
     if rf.field.type_name == "xs:boolean":
         return "true" if val == "true" else "false"
-    if rf.field.type_name in ("xs:int", "xs:unsignedInt", "xs:long", "xs:unsignedLong",
-                               "xs:integer", "xs:nonNegativeInteger"):
+    if rf.field.type_name in (
+        "xs:int",
+        "xs:unsignedInt",
+        "xs:long",
+        "xs:unsignedLong",
+        "xs:integer",
+        "xs:nonNegativeInteger",
+    ):
         return val
     if rf.field.type_name in ("xs:double", "xs:decimal"):
         return val
@@ -279,7 +294,9 @@ def _formatting_mode_expr(
 
 
 def _emit_sequence_impl(
-    w: Writer, t: ComplexType, schema: Schema,
+    w: Writer,
+    t: ComplexType,
+    schema: Schema,
     hybrid_choice_names: dict[str, list[str]] | None = None,
 ) -> None:
     """Emit .cpp implementation for a sequence type."""
@@ -316,7 +333,9 @@ def _emit_sequence_impl(
             const_name = f"DEFAULT_INITIALIZER_{to_upper_snake(f.name)}"
             w.line()
             if rf.field.type_name == "xs:string":
-                w.line(f"const char {name}::{const_name}[] = {_default_value_literal(rf, f)};")
+                w.line(
+                    f"const char {name}::{const_name}[] = {_default_value_literal(rf, f)};"
+                )
             else:
                 init_line = f"const {rf.cpp_type} {name}::{const_name} = {_default_value_literal(rf, f)};"
                 if len(init_line) <= 79:
@@ -330,7 +349,9 @@ def _emit_sequence_impl(
                     else:
                         # Long type: break after type name
                         w.line(f"const {rf.cpp_type}")
-                        w.line(f"    {name}::{const_name} = {_default_value_literal(rf, f)};")
+                        w.line(
+                            f"    {name}::{const_name} = {_default_value_literal(rf, f)};"
+                        )
 
     if n > 0:
         w.line()
@@ -454,7 +475,9 @@ def _emit_sequence_impl(
         w.wrapped(f"{name}::{name}(bslma::Allocator* basicAllocator)")
         if has_ptr:
             w.line(": d_allocator_p(bslma::Default::allocator(basicAllocator))")
-            _emit_initializer_list(w, init_resolved, has_alloc, is_copy=False, first=False)
+            _emit_initializer_list(
+                w, init_resolved, has_alloc, is_copy=False, first=False
+            )
         else:
             _emit_initializer_list(w, init_resolved, has_alloc, is_copy=False)
         w.line("{")
@@ -471,7 +494,9 @@ def _emit_sequence_impl(
         )
         if has_ptr:
             w.line(": d_allocator_p(bslma::Default::allocator(basicAllocator))")
-            _emit_initializer_list(w, init_resolved, has_alloc, is_copy=True, first=False)
+            _emit_initializer_list(
+                w, init_resolved, has_alloc, is_copy=True, first=False
+            )
         else:
             _emit_initializer_list(w, init_resolved, has_alloc, is_copy=True)
         w.line("{")
@@ -494,7 +519,12 @@ def _emit_sequence_impl(
         )
         w.line("    defined(BSLS_COMPILERFEATURES_SUPPORT_NOEXCEPT)")
         if has_ptr:
-            _emit_noexcept_move_ctor(w, name, init_resolved, alloc_prefix="d_allocator_p(original.d_allocator_p)")
+            _emit_noexcept_move_ctor(
+                w,
+                name,
+                init_resolved,
+                alloc_prefix="d_allocator_p(original.d_allocator_p)",
+            )
         else:
             _emit_noexcept_move_ctor(w, name, init_resolved)
         w.line("{")
@@ -518,7 +548,7 @@ def _emit_sequence_impl(
             pm = to_member_name(pf.name)
             pt = to_class_name(pf.type_name.removeprefix("tns:"))
             max_w = max(len(pm), len(f"original.{pm}"))
-            w.line(f"    if (d_allocator_p == original.d_allocator_p) {{")
+            w.line("    if (d_allocator_p == original.d_allocator_p) {")
             w.line(f"        {pm.ljust(max_w)} = original.{pm};")
             w.line(f"        {'original.' + pm:<{max_w}} = 0;")
             w.line("    }")
@@ -593,7 +623,9 @@ def _emit_sequence_impl(
                             w.line(full)
                         else:
                             w.line(new_expr)
-                            w.line(f"                {pt}(bsl::move(*rhs.{pm}), d_allocator_p);")
+                            w.line(
+                                f"                {pt}(bsl::move(*rhs.{pm}), d_allocator_p);"
+                            )
                         w.line("        }")
                     else:
                         w.line(f"        if ({pm}) {{")
@@ -611,7 +643,8 @@ def _emit_sequence_impl(
                 else:
                     if move:
                         maxs = _grouped_alignment(
-                            group, lambda m, w: f"        {m.ljust(w)} = bsl::move(rhs.{m});",
+                            group,
+                            lambda m, w: f"        {m.ljust(w)} = bsl::move(rhs.{m});",
                             include_wrap_width=True,
                         )
                     else:
@@ -664,10 +697,16 @@ def _emit_sequence_impl(
     w.line("{")
     # Compute max member name length for column alignment of '=' in assignments
     assign_members = [
-        to_member_name(rf.field.name) for rf in resolved
-        if rf.field.default is not None and to_member_name(rf.field.name) not in ptr_members
+        to_member_name(rf.field.name)
+        for rf in resolved
+        if rf.field.default is not None
+        and to_member_name(rf.field.name) not in ptr_members
     ]
-    max_assign_len = max((len(m) for m in assign_members), default=0) if len(assign_members) > 1 else 0
+    max_assign_len = (
+        max((len(m) for m in assign_members), default=0)
+        if len(assign_members) > 1
+        else 0
+    )
     for rf in resolved:
         m = to_member_name(rf.field.name)
         if rf.field.default is not None:
@@ -716,7 +755,9 @@ def _emit_sequence_impl(
             if rf.field.type_name == "xs:hexBinary":
                 w.line("    {")
                 w.line("        bool multilineFlag = (0 <= spacesPerLevel);")
-                w.line("        bdlb::Print::indent(stream, level + 1, spacesPerLevel);")
+                w.line(
+                    "        bdlb::Print::indent(stream, level + 1, spacesPerLevel);"
+                )
                 w.line('        stream << (multilineFlag ? "" : " ");')
                 w.line(f'        stream << "{acc} = [ ";')
                 w.line("        bdlb::Print::singleLineHexDump(stream,")
@@ -819,7 +860,10 @@ def _emit_init_member(
 
 
 def _emit_initializer_list(
-    w: Writer, sorted_resolved: list[ResolvedField], _has_alloc: bool, is_copy: bool,
+    w: Writer,
+    sorted_resolved: list[ResolvedField],
+    _has_alloc: bool,
+    is_copy: bool,
     first: bool = True,
 ) -> None:
     """Emit the member initializer list for a constructor."""
@@ -850,7 +894,9 @@ def _emit_initializer_list(
 
 
 def _emit_move_init_list(
-    w: Writer, sorted_resolved: list[ResolvedField], with_allocator: bool,
+    w: Writer,
+    sorted_resolved: list[ResolvedField],
+    with_allocator: bool,
     first: bool = True,
 ) -> None:
     """Emit the member initializer list for a move constructor.
@@ -890,7 +936,9 @@ def _emit_move_init_list(
 
 
 def _emit_noexcept_move_ctor(
-    w: Writer, name: str, sorted_resolved: list[ResolvedField],
+    w: Writer,
+    name: str,
+    sorted_resolved: list[ResolvedField],
     alloc_prefix: str | None = None,
 ) -> None:
     """Emit the noexcept move constructor declaration + init list.
@@ -1018,8 +1066,17 @@ def _emit_placement_new(
             w.line(f"{cont_indent}{arg}{sfx}")
         return True
 
-    _CPP_BUILTINS = {"bool", "char", "short", "int", "long", "float", "double",
-                      "unsigned", "signed"}
+    _CPP_BUILTINS = {
+        "bool",
+        "char",
+        "short",
+        "int",
+        "long",
+        "float",
+        "double",
+        "unsigned",
+        "signed",
+    }
     # For C++ built-in types, Bloomberg keeps Type( on the new-expression
     # line before trying the buffer()) split.
     if cpp_type in _CPP_BUILTINS and _try_keep_type_on_new_line():
@@ -1471,9 +1528,7 @@ def _emit_choice_impl(w: Writer, t: ComplexType, schema: Schema) -> None:
         if has_alloc and rf.needs_allocator:
             _emit_placement_new(w, m, rf.cpp_type, "d_allocator_p")
         elif rf.is_enum:
-            _emit_placement_new(
-                w, m, rf.cpp_type, f"static_cast<{rf.cpp_type}>(0)"
-            )
+            _emit_placement_new(w, m, rf.cpp_type, f"static_cast<{rf.cpp_type}>(0)")
         else:
             _emit_placement_new(w, m, rf.cpp_type, "")
         w.line(f"        d_selectionId = {sel_id};")
@@ -1596,9 +1651,15 @@ def _emit_choice_impl(w: Writer, t: ComplexType, schema: Schema) -> None:
 # ---------------------------------------------------------------------------
 
 
-def emit_source(  # pylint: disable=redefined-builtin
-    schema: Schema, pkg: str, component: str, copyright: str = "",
-    xsd_name: str = "", codegen_version: str = "", extra_flags: str = "",
+def emit_source(
+    schema: Schema,
+    pkg: str,
+    component: str,
+    *,
+    copyright: str = "",  # pylint: disable=redefined-builtin
+    xsd_name: str = "",
+    codegen_version: str = "",
+    extra_flags: str = "",
 ) -> str:
     """Generate the complete .cpp file content.
 
@@ -1648,6 +1709,8 @@ def emit_source(  # pylint: disable=redefined-builtin
     flags_suffix = f" {extra_flags}" if extra_flags else ""
     w.line(f"// GENERATED BY BLP_BAS_CODEGEN_{ver}")
     w.line("// USING bas_codegen.pl -m msg --noAggregateConversion --noExternalization")
-    w.line(f"// --noIdent --package {pkg} --msgComponent {component} {xsd_file}{flags_suffix}")
+    w.line(
+        f"// --noIdent --package {pkg} --msgComponent {component} {xsd_file}{flags_suffix}"
+    )
 
     return w.result()

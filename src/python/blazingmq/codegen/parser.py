@@ -169,9 +169,13 @@ def _parse_complex(elem: ET.Element) -> tuple[ComplexType, list[EnumType]]:
     # Pure choice at top level
     if choice_elem is not None and seq is None:
         choice_elements = choice_elem.findall(f"{XS}element")
-        inline_enums.extend(_extract_inline_enums(choice_elements, name, is_choice=True))
+        inline_enums.extend(
+            _extract_inline_enums(choice_elements, name, is_choice=True)
+        )
         choices = [_parse_field(e) for e in choice_elements]
-        return ComplexType(name=name, kind=TypeKind.CHOICE, doc=doc, choices=choices), inline_enums
+        return ComplexType(
+            name=name, kind=TypeKind.CHOICE, doc=doc, choices=choices
+        ), inline_enums
 
     if seq is None:
         # Empty sequence (shouldn't happen in practice but handle gracefully)
@@ -181,7 +185,9 @@ def _parse_complex(elem: ET.Element) -> tuple[ComplexType, list[EnumType]]:
     inner_choice = seq.find(f"{XS}choice")
     if inner_choice is not None:
         choice_elements = inner_choice.findall(f"{XS}element")
-        inline_enums.extend(_extract_inline_enums(choice_elements, name, is_choice=True))
+        inline_enums.extend(
+            _extract_inline_enums(choice_elements, name, is_choice=True)
+        )
         choices = [_parse_field(e) for e in choice_elements]
         # Determine position of <choice> among sibling elements
         # by counting <element> children that appear before <choice>
@@ -208,7 +214,9 @@ def _parse_complex(elem: ET.Element) -> tuple[ComplexType, list[EnumType]]:
     seq_elements = seq.findall(f"{XS}element")
     inline_enums.extend(_extract_inline_enums(seq_elements, name, is_choice=False))
     fields = [_parse_field(e) for e in seq_elements]
-    return ComplexType(name=name, kind=TypeKind.SEQUENCE, doc=doc, fields=fields), inline_enums
+    return ComplexType(
+        name=name, kind=TypeKind.SEQUENCE, doc=doc, fields=fields
+    ), inline_enums
 
 
 def _normalize_type_refs(schema: Schema) -> None:
