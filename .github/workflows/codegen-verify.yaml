@@ -670,22 +670,18 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}/src/python
         run: |
-          declare -A SCHEMAS
-          SCHEMAS=(
-            ["m_bmqtool"]="src/applications/bmqtool:bmqtoolcmd.xsd:messages"
-            ["bmqp_ctrlmsg"]="src/groups/bmq/bmqp:bmqp_ctrlmsg.xsd:messages"
-            ["bmqstm"]="src/groups/bmq/bmqstm:bmqstm.xsd:values"
-            ["mqbcfg"]="src/groups/mqb/mqbcfg:mqbcfg.xsd:messages"
-            ["mqbcmd"]="src/groups/mqb/mqbcmd:mqbcmd.xsd:messages"
-            ["mqbconfm"]="src/groups/mqb/mqbconfm:mqbconf.xsd:messages"
-          )
-          for pkg in "${!SCHEMAS[@]}"; do
-            IFS=: read -r dir xsd comp <<< "${SCHEMAS[$pkg]}"
-            python -m blazingmq.codegen \
-              --package "$pkg" --msgComponent "$comp" \
-              --output-dir "$dir" \
-              "$dir/$xsd"
-          done
+          python -m blazingmq.codegen --package m_bmqtool --msgComponent messages \
+            --output-dir src/applications/bmqtool src/applications/bmqtool/bmqtoolcmd.xsd
+          python -m blazingmq.codegen --package bmqp_ctrlmsg --msgComponent messages \
+            --output-dir src/groups/bmq/bmqp src/groups/bmq/bmqp/bmqp_ctrlmsg.xsd
+          python -m blazingmq.codegen --package bmqstm --msgComponent values \
+            --output-dir src/groups/bmq/bmqstm src/groups/bmq/bmqstm/bmqstm.xsd
+          python -m blazingmq.codegen --package mqbcfg --msgComponent messages \
+            --output-dir src/groups/mqb/mqbcfg src/groups/mqb/mqbcfg/mqbcfg.xsd
+          python -m blazingmq.codegen --package mqbcmd --msgComponent messages \
+            --output-dir src/groups/mqb/mqbcmd src/groups/mqb/mqbcmd/mqbcmd.xsd
+          python -m blazingmq.codegen --package mqbconfm --msgComponent messages \
+            --output-dir src/groups/mqb/mqbconfm src/groups/mqb/mqbconfm/mqbconf.xsd
 
       - name: Build BlazingMQ [macOS]
         env:

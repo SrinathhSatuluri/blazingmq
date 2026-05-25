@@ -238,9 +238,10 @@ def _norm_doc(text: str) -> str:
     Bloomberg's codegen doubles the space after a sentence-ending period
     (``". "`` → ``".  "``).  The XSD may only have a single space; this
     helper normalises that.  Periods that are part of dot-sequences (like
-    ``rebalance..:``) are left alone.
+    ``rebalance..:``) are left alone.  Multi-line text is flattened into
+    a single line so that ``w.comment()`` can re-wrap it correctly.
     """
-    return _normalize_sentence_spacing(text)
+    return _normalize_sentence_spacing(" ".join(text.split()))
 
 
 def _emit_aligned_union_members(
