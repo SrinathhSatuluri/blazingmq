@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"structBloombergLP_1_1bmqt_1_1AckResult.html#a1232d58884a451e4d58238115beaf70aae2f76a912fab276284baac7123dd1798":[0,0,0,2,0,0,13],
+"structBloombergLP_1_1bmqt_1_1AckResult.html#a1232d58884a451e4d58238115beaf70aae2f76a912fab276284baac7123dd1798":[1,0,0,2,0,0,13],
 "structBloombergLP_1_1bmqt_1_1AckResult.html#a1232d58884a451e4d58238115beaf70aae4bacf490ec27d51cb9761e43b9df392":[0,0,0,2,0,0,8],
 "structBloombergLP_1_1bmqt_1_1AckResult.html#a1232d58884a451e4d58238115beaf70aae4bacf490ec27d51cb9761e43b9df392":[1,0,0,2,0,0,8],
 "structBloombergLP_1_1bmqt_1_1AckResult.html#a1232d58884a451e4d58238115beaf70aaee2cb712fac6813a8472e3fc2c8fbb1c":[1,0,0,2,0,0,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286":[0,0,0,2,15,0],
 "structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286":[1,0,0,2,15,0],
 "structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a25a7c4f94c68f16a7c1ee6e8a0972d2b":[1,0,0,2,15,0,4],
-"structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a25a7c4f94c68f16a7c1ee6e8a0972d2b":[0,0,0,2,15,0,4],
-"structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a38b050bd3f8d0e1b605b20f4801555cb":[0,0,0,2,15,0,0],
-"structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a38b050bd3f8d0e1b605b20f4801555cb":[1,0,0,2,15,0,0]
+"structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a25a7c4f94c68f16a7c1ee6e8a0972d2b":[0,0,0,2,15,0,4]
 };

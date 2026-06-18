@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a38b050bd3f8d0e1b605b20f4801555cb":[0,0,0,2,15,0,0],
+"structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a38b050bd3f8d0e1b605b20f4801555cb":[1,0,0,2,15,0,0],
 "structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a610c03211e611bc841b045945c366404":[1,0,0,2,15,0,3],
 "structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a610c03211e611bc841b045945c366404":[0,0,0,2,15,0,3],
 "structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286a813fabbe61b5a0d0be9549323992c873":[1,0,0,2,15,0,1],

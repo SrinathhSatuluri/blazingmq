@@ -34,7 +34,7 @@ var searchData=
   ['createmessageeventbuilder_31',['createMessageEventBuilder',['../classBloombergLP_1_1bmqa_1_1Session.html#ac9f1af67aa57f23b38d395b2a3a7e6b8',1,'BloombergLP::bmqa::Session']]],
   ['createopenqueuestatus_32',['createOpenQueueStatus',['../structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4f5f522a212c0668f45395e58a68dce7',1,'BloombergLP::bmqa::MockSessionUtil']]],
   ['createpushevent_33',['createpushevent',['../structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#ac5f7d37f2ce593efd01cb358b2f6fd2d',1,'BloombergLP::bmqa::MockSessionUtil::createPushEvent(const bsl::vector&lt; PushMessageParams &gt; &amp;pushEventParams, bdlbb::BlobBufferFactory *bufferFactory, bslma::Allocator *allocator)'],['../structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a446df499a73b5977282b00a311ad2348',1,'BloombergLP::bmqa::MockSessionUtil::createPushEvent(const bsl::vector&lt; PushMessageParams &gt; &amp;pushEventParams, BlobSpPool *blobSpPool, bdlbb::BlobBufferFactory *bufferFactory, bslma::Allocator *allocator)']]],
-  ['createqueuesessionevent_34',['createQueueSessionEvent',['../structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#ac3f6b393d105a5fc6a3438dbbb3ade4c',1,'BloombergLP::bmqa::MockSessionUtil']]],
-  ['createsessionevent_35',['createSessionEvent',['../structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a392f42a17153e6bccb5e96de67b37973',1,'BloombergLP::bmqa::MockSessionUtil']]],
+  ['createqueuesessionevent_34',['createQueueSessionEvent',['../structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a0d713067360db82b70c750a8ae8e44ae',1,'BloombergLP::bmqa::MockSessionUtil']]],
+  ['createsessionevent_35',['createSessionEvent',['../structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a7fde4d2a204d1eef29f0a0ad992bb586',1,'BloombergLP::bmqa::MockSessionUtil']]],
   ['currentmessage_36',['currentMessage',['../classBloombergLP_1_1bmqa_1_1MessageEventBuilder.html#aa619a66b90b09f36c35f7e9cbb0fe7b5',1,'BloombergLP::bmqa::MessageEventBuilder']]]
 ];
