@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;8505a93ce14aa2688fa6808a8e9df727ced3f16d</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;c2369ce3f776926f9de948e41bcc3f65a9cbf2da</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:af70dd6d0d3d08abd3ff019a370747585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc6e32247ac36a85d7523b4aadf0286" id="r_a9bc6e32247ac36a85d7523b4aadf0286"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#a9bc6e32247ac36a85d7523b4aadf0286">fromAscii</a> (<a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#a8a5f62a265c19e07a6f061c26ae47620">CloseQueueResult::Enum</a> *out, const bslstl::StringRef &amp;str)</td></tr>
 <tr class="separator:a9bc6e32247ac36a85d7523b4aadf0286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3040897c3598379141c95e9f09a87d" id="r_aae3040897c3598379141c95e9f09a87d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#a8a5f62a265c19e07a6f061c26ae47620">bmqt::CloseQueueResult::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#aae3040897c3598379141c95e9f09a87d">fromStatusCode</a> (int code)</td></tr>
+<tr class="separator:aae3040897c3598379141c95e9f09a87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8a5f62a265c19e07a6f061c26ae47620" name="a8a5f62a265c19e07a6f061c26ae47620"></a>
@@ -281,6 +283,33 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Return true and fills the specified <code>out</code> with the enum value corresponding to the specified <code>str</code>, if valid, or return false and leave <code>out</code> untouched if <code>str</code> doesn't correspond to any value of the enum. </p>
+
+</div>
+</div>
+<a id="aae3040897c3598379141c95e9f09a87d" name="aae3040897c3598379141c95e9f09a87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3040897c3598379141c95e9f09a87d">&#9670;&#160;</a></span>fromStatusCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#a8a5f62a265c19e07a6f061c26ae47620">bmqt::CloseQueueResult::Enum</a> BloombergLP::bmqt::CloseQueueResult::fromStatusCode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a status code into a close queue result. If <code>code</code> does not match one of the <code><a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#a8a5f62a265c19e07a6f061c26ae47620">CloseQueueResult::Enum</a></code> variants, return <code><a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#a8a5f62a265c19e07a6f061c26ae47620a51862542162a31bb4bb22ede6808a955">bmqt::CloseQueueResult::e_UNKNOWN</a></code>. Otherwise, return the value of <code>code</code> casted as a <code><a class="el" href="structBloombergLP_1_1bmqt_1_1CloseQueueResult.html#a8a5f62a265c19e07a6f061c26ae47620">bmqt::CloseQueueResult::Enum</a></code>. </p>
 
 </div>
 </div>

@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;8505a93ce14aa2688fa6808a8e9df727ced3f16d</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;c2369ce3f776926f9de948e41bcc3f65a9cbf2da</span>
    </div>
   </td>
  </tr>
@@ -121,10 +121,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ac5f7d37f2ce593efd01cb358b2f6fd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a446df499a73b5977282b00a311ad2348" id="r_a446df499a73b5977282b00a311ad2348"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a446df499a73b5977282b00a311ad2348">createPushEvent</a> (const bsl::vector&lt; <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil_1_1PushMessageParams.html">PushMessageParams</a> &gt; &amp;pushEventParams, BlobSpPool *blobSpPool, bdlbb::BlobBufferFactory *bufferFactory, bslma::Allocator *allocator)</td></tr>
 <tr class="separator:a446df499a73b5977282b00a311ad2348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d713067360db82b70c750a8ae8e44ae" id="r_a0d713067360db82b70c750a8ae8e44ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a0d713067360db82b70c750a8ae8e44ae">createQueueSessionEvent</a> (<a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431">bmqt::SessionEventType::Enum</a> sessionEventType, <a class="el" href="classBloombergLP_1_1bmqa_1_1QueueId.html">QueueId</a> *queueId, const <a class="el" href="classBloombergLP_1_1bmqt_1_1CorrelationId.html">bmqt::CorrelationId</a> &amp;correlationId, int errorCode, <a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">bmqt::GenericResult::Enum</a> result, const bslstl::StringRef &amp;errorDescription, bslma::Allocator *allocator)</td></tr>
-<tr class="separator:a0d713067360db82b70c750a8ae8e44ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fde4d2a204d1eef29f0a0ad992bb586" id="r_a7fde4d2a204d1eef29f0a0ad992bb586"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a7fde4d2a204d1eef29f0a0ad992bb586">createSessionEvent</a> (<a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431">bmqt::SessionEventType::Enum</a> sessionEventType, const <a class="el" href="classBloombergLP_1_1bmqt_1_1CorrelationId.html">bmqt::CorrelationId</a> &amp;correlationId, const int errorCode, <a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">bmqt::GenericResult::Enum</a> result, const bslstl::StringRef &amp;errorDescription, bslma::Allocator *allocator)</td></tr>
-<tr class="separator:a7fde4d2a204d1eef29f0a0ad992bb586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869a3c7e3f7719e0b05b5adf34e5ecad" id="r_a869a3c7e3f7719e0b05b5adf34e5ecad"><td class="memItemLeft" align="right" valign="top">BSLS_DEPRECATE_FEATURE(&quot;bmq&quot;, &quot;bmqa::MockSessionUtil::createQueueSessionEvent&quot;, &quot;Use the <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4f5f522a212c0668f45395e58a68dce7">createOpenQueueStatus</a>(...), <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#ac38f95032e86c0c8331e777546a39980">createConfigureQueueStatus</a>(...), &quot; &quot;or <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4a222b76ef53c181dcf0f8fc94140d0e">createCloseQueueStatus</a>(...) methods instead.&quot;) static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> createQueueSessionEvent(bmqt BSLS_DEPRECATE_FEATURE(&quot;bmq&quot;, &quot;bmqa::MockSessionUtil::createQueueSessionEvent&quot;, &quot;Use the <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4f5f522a212c0668f45395e58a68dce7">createOpenQueueStatus</a>(...), <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#ac38f95032e86c0c8331e777546a39980">createConfigureQueueStatus</a>(...), &quot; &quot;or <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4a222b76ef53c181dcf0f8fc94140d0e">createCloseQueueStatus</a>(...) methods instead.&quot;) static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> createQueueSessionEvent(bmqt static BSLS_DEPRECATE_FEATURE(&quot;bmq&quot;, &quot;result-code&quot;, &quot;Use the createSessionEvent overload that takes a result code&quot;) static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> createSessionEvent(bmqt <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a869a3c7e3f7719e0b05b5adf34e5ecad">createSessionEvent</a> (<a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431">bmqt::SessionEventType::Enum</a> sessionEventType, const <a class="el" href="classBloombergLP_1_1bmqt_1_1CorrelationId.html">bmqt::CorrelationId</a> &amp;correlationId, const int errorCode, <a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">bmqt::GenericResult::Enum</a> result, const bslstl::StringRef &amp;errorDescription, bslma::Allocator *allocator)</td></tr>
+<tr class="separator:a869a3c7e3f7719e0b05b5adf34e5ecad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f5f522a212c0668f45395e58a68dce7" id="r_a4f5f522a212c0668f45395e58a68dce7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBloombergLP_1_1bmqa_1_1OpenQueueStatus.html">OpenQueueStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4f5f522a212c0668f45395e58a68dce7">createOpenQueueStatus</a> (const <a class="el" href="classBloombergLP_1_1bmqa_1_1QueueId.html">QueueId</a> &amp;queueId, <a class="el" href="structBloombergLP_1_1bmqt_1_1OpenQueueResult.html#a4516648a84ec19ab09dd3975c0641286">bmqt::OpenQueueResult::Enum</a> statusCode, const bsl::string &amp;errorDescription, bslma::Allocator *allocator=0)</td></tr>
 <tr class="separator:a4f5f522a212c0668f45395e58a68dce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac38f95032e86c0c8331e777546a39980" id="r_ac38f95032e86c0c8331e777546a39980"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBloombergLP_1_1bmqa_1_1ConfigureQueueStatus.html">ConfigureQueueStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#ac38f95032e86c0c8331e777546a39980">createConfigureQueueStatus</a> (const <a class="el" href="classBloombergLP_1_1bmqa_1_1QueueId.html">QueueId</a> &amp;queueId, <a class="el" href="structBloombergLP_1_1bmqt_1_1ConfigureQueueResult.html#ac84ef75fc9f456a509acbfe1d5e65540">bmqt::ConfigureQueueResult::Enum</a> statusCode, const bsl::string &amp;errorDescription, bslma::Allocator *allocator=0)</td></tr>
@@ -317,8 +315,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0d713067360db82b70c750a8ae8e44ae" name="a0d713067360db82b70c750a8ae8e44ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d713067360db82b70c750a8ae8e44ae">&#9670;&#160;</a></span>createQueueSessionEvent()</h2>
+<a id="a869a3c7e3f7719e0b05b5adf34e5ecad" name="a869a3c7e3f7719e0b05b5adf34e5ecad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869a3c7e3f7719e0b05b5adf34e5ecad">&#9670;&#160;</a></span>createSessionEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,74 +325,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> BloombergLP::bmqa::MockSessionUtil::createQueueSessionEvent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431">bmqt::SessionEventType::Enum</a>&#160;</td>
-          <td class="paramname"><em>sessionEventType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classBloombergLP_1_1bmqa_1_1QueueId.html">QueueId</a> *&#160;</td>
-          <td class="paramname"><em>queueId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classBloombergLP_1_1bmqt_1_1CorrelationId.html">bmqt::CorrelationId</a> &amp;&#160;</td>
-          <td class="paramname"><em>correlationId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>errorCode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">bmqt::GenericResult::Enum</a>&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bslstl::StringRef &amp;&#160;</td>
-          <td class="paramname"><em>errorDescription</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bslma::Allocator *&#160;</td>
-          <td class="paramname"><em>allocator</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>DEPRECATED: Use the <code>createOpenQueueStatus(...)</code>, <code>createConfigureQueueStatus(...)</code>, or <code>createCloseQueueStatus(...)</code> methods instead. This method will be marked as <code>BSLA_DEPRECATED</code> in future release of libbmq. </p>
-
-</div>
-</div>
-<a id="a7fde4d2a204d1eef29f0a0ad992bb586" name="a7fde4d2a204d1eef29f0a0ad992bb586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fde4d2a204d1eef29f0a0ad992bb586">&#9670;&#160;</a></span>createSessionEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> BloombergLP::bmqa::MockSessionUtil::createSessionEvent </td>
+          <td class="memname">BSLS_DEPRECATE_FEATURE(&quot;bmq&quot;, &quot;bmqa::MockSessionUtil::createQueueSessionEvent&quot;, &quot;Use the <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4f5f522a212c0668f45395e58a68dce7">createOpenQueueStatus</a>(...), <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#ac38f95032e86c0c8331e777546a39980">createConfigureQueueStatus</a>(...), &quot; &quot;or <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4a222b76ef53c181dcf0f8fc94140d0e">createCloseQueueStatus</a>(...) methods instead.&quot;) static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> createQueueSessionEvent(bmqt BSLS_DEPRECATE_FEATURE(&quot;bmq&quot;, &quot;bmqa::MockSessionUtil::createQueueSessionEvent&quot;, &quot;Use the <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4f5f522a212c0668f45395e58a68dce7">createOpenQueueStatus</a>(...), <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#ac38f95032e86c0c8331e777546a39980">createConfigureQueueStatus</a>(...), &quot; &quot;or <a class="el" href="structBloombergLP_1_1bmqa_1_1MockSessionUtil.html#a4a222b76ef53c181dcf0f8fc94140d0e">createCloseQueueStatus</a>(...) methods instead.&quot;) static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> createQueueSessionEvent(bmqt static BSLS_DEPRECATE_FEATURE(&quot;bmq&quot;, &quot;result-code&quot;, &quot;Use the createSessionEvent overload that takes a result code&quot;) static <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> createSessionEvent(bmqt <a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html">Event</a> BloombergLP::bmqa::MockSessionUtil::createSessionEvent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structBloombergLP_1_1bmqt_1_1SessionEventType.html#ae92327d931cc88d7adb05afdbc5f0431">bmqt::SessionEventType::Enum</a>&#160;</td>
           <td class="paramname"><em>sessionEventType</em>, </td>
@@ -441,7 +372,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create and return an <code><a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html" title="A variant type encompassing all types of events.">Event</a></code> configured as a session event with the specified <code>sessionEventType</code>, <code>errorCode</code> and <code>errorDescription</code> and using the specified <code>allocator</code> to supply memory. Note that this method will not create queue related session events. </p>
+<p>Create and return an <code><a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html" title="A variant type encompassing all types of events.">Event</a></code> configured as a session event with the specified <code>sessionEventType</code>, <code>errorCode</code> and <code>errorDescription</code> and using the specified <code>allocator</code> to supply memory. Note that this method will not create queue related session events. Create and return an <code><a class="el" href="classBloombergLP_1_1bmqa_1_1Event.html" title="A variant type encompassing all types of events.">Event</a></code> configured as a session event with the specified <code>sessionEventType</code>, <code>errorCode</code>, <code>result</code>, and <code>errorDescription</code> and using the specified <code>allocator</code> to supply memory. Note that this method will not create queue related session events. </p>
 
 </div>
 </div>

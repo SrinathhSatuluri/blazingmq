@@ -1,6 +1,6 @@
 var classBloombergLP_1_1bmqt_1_1SessionOptions =
 [
-    [ "AuthnCredentialCb", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a8dc726653a5f599f9da80320ff7b8016", null ],
+    [ "AuthnCredentialCb", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ac2c280c90eadd8bce630bca33bd8431a", null ],
     [ "SessionOptions", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a255bd2874882db309fc98bdfcfa898a7", null ],
     [ "SessionOptions", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#ae9934f5717db17ab6faa6b4a292cb318", null ],
     [ "setBrokerUri", "classBloombergLP_1_1bmqt_1_1SessionOptions.html#a6d66d9b77fd96366f363c688766f6601", null ],

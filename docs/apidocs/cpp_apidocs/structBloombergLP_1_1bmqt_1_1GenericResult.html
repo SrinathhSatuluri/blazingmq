@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;8505a93ce14aa2688fa6808a8e9df727ced3f16d</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;c2369ce3f776926f9de948e41bcc3f65a9cbf2da</span>
    </div>
   </td>
  </tr>
@@ -129,6 +129,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a29c29010da543400b43574658a26b9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8573da9608080051ef896b52dc93fcd5" id="r_a8573da9608080051ef896b52dc93fcd5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a8573da9608080051ef896b52dc93fcd5">fromAscii</a> (<a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">GenericResult::Enum</a> *out, const bslstl::StringRef &amp;str)</td></tr>
 <tr class="separator:a8573da9608080051ef896b52dc93fcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45f52229801172bcf6af74619476a11" id="r_ae45f52229801172bcf6af74619476a11"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">bmqt::GenericResult::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#ae45f52229801172bcf6af74619476a11">fromStatusCode</a> (int statusCode)</td></tr>
+<tr class="separator:ae45f52229801172bcf6af74619476a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a32bb01beba222483e9439b7cf8d6a0eb" name="a32bb01beba222483e9439b7cf8d6a0eb"></a>
@@ -280,6 +282,33 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Return true and fills the specified <code>out</code> with the enum value corresponding to the specified <code>str</code>, if valid, or return false and leave <code>out</code> untouched if <code>str</code> doesn't correspond to any value of the enum. </p>
+
+</div>
+</div>
+<a id="ae45f52229801172bcf6af74619476a11" name="ae45f52229801172bcf6af74619476a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45f52229801172bcf6af74619476a11">&#9670;&#160;</a></span>fromStatusCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">bmqt::GenericResult::Enum</a> BloombergLP::bmqt::GenericResult::fromStatusCode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>statusCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a status code into a generic result. If <code>code</code> does not match one of the <code><a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">GenericResult::Enum</a></code> variants, return <code><a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0ebaf0fe7420175c4220d3a0b78aedf930e3" title="Operation failed for unknown reason.">bmqt::GenericResult::e_UNKNOWN</a></code>. Otherwise, return the value of <code>code</code> casted as a <code><a class="el" href="structBloombergLP_1_1bmqt_1_1GenericResult.html#a32bb01beba222483e9439b7cf8d6a0eb">GenericResult::Enum</a></code>. </p>
 
 </div>
 </div>
