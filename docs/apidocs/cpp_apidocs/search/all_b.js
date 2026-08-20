@@ -12,8 +12,9 @@ var searchData=
   ['hasproperty_9',['hasProperty',['../classBloombergLP_1_1bmqa_1_1MessageProperties.html#a15466f7b61ecc45726294b6b51d8635d',1,'BloombergLP::bmqa::MessageProperties']]],
   ['hassuspendsonbadhosthealth_10',['hasSuspendsOnBadHostHealth',['../classBloombergLP_1_1bmqt_1_1QueueOptions.html#ad24afcd174846dd0388906d8a7f3a744',1,'BloombergLP::bmqt::QueueOptions']]],
   ['helper_20methods_11',['Static Helper Methods',['../bmqa__mocksession_8h.html#bmqa_mocksession_helper',1,'']]],
-  ['hosthealthchangefn_12',['HostHealthChangeFn',['../classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#a7f07d4c411b768b570ad25033f9822da',1,'BloombergLP::bmqpi::HostHealthMonitor']]],
-  ['hosthealthmonitor_13',['hosthealthmonitor',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a7dae3ea3f872a4051832f5c9895f80d5',1,'BloombergLP::bmqt::SessionOptions::hostHealthMonitor()'],['../classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html',1,'BloombergLP::bmqpi::HostHealthMonitor']]],
-  ['hosthealthstate_14',['HostHealthState',['../structBloombergLP_1_1bmqt_1_1HostHealthState.html',1,'BloombergLP::bmqt']]],
-  ['hoststate_15',['hoststate',['../classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#adac95711851d65c54f3fba765c70a052',1,'BloombergLP::bmqa::ManualHostHealthMonitor::hostState()'],['../classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#ac7eaa7b59fc883477c017c6dee2772b7',1,'BloombergLP::bmqpi::HostHealthMonitor::hostState()']]]
+  ['highwatermark_12',['highWatermark',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a2a73eb47860ae4a75399f269ad7fb11b',1,'BloombergLP::bmqt::SessionOptions']]],
+  ['hosthealthchangefn_13',['HostHealthChangeFn',['../classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#a7f07d4c411b768b570ad25033f9822da',1,'BloombergLP::bmqpi::HostHealthMonitor']]],
+  ['hosthealthmonitor_14',['hosthealthmonitor',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a7dae3ea3f872a4051832f5c9895f80d5',1,'BloombergLP::bmqt::SessionOptions::hostHealthMonitor()'],['../classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html',1,'BloombergLP::bmqpi::HostHealthMonitor']]],
+  ['hosthealthstate_15',['HostHealthState',['../structBloombergLP_1_1bmqt_1_1HostHealthState.html',1,'BloombergLP::bmqt']]],
+  ['hoststate_16',['hoststate',['../classBloombergLP_1_1bmqa_1_1ManualHostHealthMonitor.html#adac95711851d65c54f3fba765c70a052',1,'BloombergLP::bmqa::ManualHostHealthMonitor::hostState()'],['../classBloombergLP_1_1bmqpi_1_1HostHealthMonitor.html#ac7eaa7b59fc883477c017c6dee2772b7',1,'BloombergLP::bmqpi::HostHealthMonitor::hostState()']]]
 ];

@@ -48,7 +48,8 @@ var searchData=
   ['bmqt_5fsubscription_2eh_45',['bmqt_subscription.h',['../bmqt__subscription_8h.html',1,'']]],
   ['bmqt_5furi_2eh_46',['bmqt_uri.h',['../bmqt__uri_8h.html',1,'']]],
   ['bmqt_5fversion_2eh_47',['bmqt_version.h',['../bmqt__version_8h.html',1,'']]],
-  ['booltype_48',['booltype',['../classBloombergLP_1_1bmqa_1_1OpenQueueStatus.html#a2b3f970a54c977703e857b630e166987',1,'BloombergLP::bmqa::OpenQueueStatus::BoolType'],['../classBloombergLP_1_1bmqa_1_1CloseQueueStatus.html#a2ea2e674d96b19c4a9c82fdffbf2f3b8',1,'BloombergLP::bmqa::CloseQueueStatus::BoolType']]],
+  ['booltype_48',['booltype',['../classBloombergLP_1_1bmqa_1_1CloseQueueStatus.html#a2ea2e674d96b19c4a9c82fdffbf2f3b8',1,'BloombergLP::bmqa::CloseQueueStatus::BoolType'],['../classBloombergLP_1_1bmqa_1_1OpenQueueStatus.html#a2b3f970a54c977703e857b630e166987',1,'BloombergLP::bmqa::OpenQueueStatus::BoolType']]],
   ['broker_49',['Connecting to the Broker',['../bmqa__session_8h.html#bmqa_session_connecting',1,'']]],
-  ['brokeruri_50',['brokerUri',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#aafdced0acc315ea53c517ac036dfdeb2',1,'BloombergLP::bmqt::SessionOptions']]]
+  ['brokeruri_50',['brokerUri',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#aafdced0acc315ea53c517ac036dfdeb2',1,'BloombergLP::bmqt::SessionOptions']]],
+  ['bsls_5fdeprecate_5ffeature_51',['bsls_deprecate_feature',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a60f796ef765ee8ed15300a10dbd5d86f',1,'BloombergLP::bmqt::SessionOptions::BSLS_DEPRECATE_FEATURE(&quot;bmqt&quot;, &quot;eventQueueSize&quot;, &quot;This API is no longer supported and will be &quot; &quot;removed in future release of libbmq.&quot;) int eventQueueSize() const'],['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a2b849d83465d7684a087cb10a05224e8',1,'BloombergLP::bmqt::SessionOptions::BSLS_DEPRECATE_FEATURE(&quot;bmqt&quot;, &quot;configureEventQueue&quot;, &quot;Use configureEventQueue(int lowWatermark, int &quot; &quot;highWatermark) instead.&quot;) SessionOptions &amp;configureEventQueue(int queueSize']]]
 ];

@@ -14,5 +14,6 @@ var searchData=
   ['_7emocksession_11',['~MockSession',['../classBloombergLP_1_1bmqa_1_1MockSession.html#a69ad5cc141e5c7bd4e38e87ebcf1df59',1,'BloombergLP::bmqa::MockSession']]],
   ['_7esession_12',['~Session',['../classBloombergLP_1_1bmqa_1_1Session.html#afd65e60aebe6c194f524f0595c45b10d',1,'BloombergLP::bmqa::Session']]],
   ['_7esessioneventhandler_13',['~SessionEventHandler',['../classBloombergLP_1_1bmqa_1_1SessionEventHandler.html#a0c6072d3ebaed27f98ba76eca2caa000',1,'BloombergLP::bmqa::SessionEventHandler']]],
-  ['_7euri_14',['~Uri',['../classBloombergLP_1_1bmqt_1_1Uri.html#a926490071ff0f7bf136ba0cbb2de7b3b',1,'BloombergLP::bmqt::Uri']]]
+  ['_7esessionoptions_14',['~SessionOptions',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#a6764c5cb91952bfe1afbf8902203cc34',1,'BloombergLP::bmqt::SessionOptions']]],
+  ['_7euri_15',['~Uri',['../classBloombergLP_1_1bmqt_1_1Uri.html#a926490071ff0f7bf136ba0cbb2de7b3b',1,'BloombergLP::bmqt::Uri']]]
 ];

@@ -6,5 +6,6 @@ var searchData=
   ['loadproperties_3',['loadProperties',['../classBloombergLP_1_1bmqa_1_1Message.html#ae2012cfab817c05b304e06b49337adde',1,'BloombergLP::bmqa::Message']]],
   ['loadsubscription_4',['loadSubscription',['../classBloombergLP_1_1bmqt_1_1QueueOptions.html#a5e7aca6d09c035852f9d406589eff246',1,'BloombergLP::bmqt::QueueOptions']]],
   ['loadsubscriptions_5',['loadSubscriptions',['../classBloombergLP_1_1bmqt_1_1QueueOptions.html#a89d5ebcb3ca553ec434c1dbb4602b1b3',1,'BloombergLP::bmqt::QueueOptions']]],
-  ['loss_20and_20reconnection_6',['Connection loss and reconnection',['../bmqa__session_8h.html#bmqa_session_reconnection',1,'']]]
+  ['loss_20and_20reconnection_6',['Connection loss and reconnection',['../bmqa__session_8h.html#bmqa_session_reconnection',1,'']]],
+  ['lowwatermark_7',['lowWatermark',['../classBloombergLP_1_1bmqt_1_1SessionOptions.html#ad9ce850234682cd9338cb43f88cc3259',1,'BloombergLP::bmqt::SessionOptions']]]
 ];

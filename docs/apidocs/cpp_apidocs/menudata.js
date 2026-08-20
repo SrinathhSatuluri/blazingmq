@@ -84,7 +84,9 @@ var menudata={children:[
 {text:"~",url:"functions_func_~.html#index__7E"}]},
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"d",url:"functions_vars.html#index_d"},
-{text:"k",url:"functions_vars.html#index_k"}]},
+{text:"h",url:"functions_vars.html#index_h"},
+{text:"k",url:"functions_vars.html#index_k"},
+{text:"l",url:"functions_vars.html#index_l"}]},
 {text:"Typedefs",url:"functions_type.html"},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html",children:[

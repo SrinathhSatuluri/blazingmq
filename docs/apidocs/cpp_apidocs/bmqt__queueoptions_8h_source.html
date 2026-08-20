@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libbmq<span id="projectnumber">&#160;0523e97c1efd342afcf3b35eef7e85c916c64995</span>
+   <div id="projectname">libbmq<span id="projectnumber">&#160;f9b62ae13f2a173fffc032aa2c3a5d51d7bfb1b9</span>
    </div>
   </td>
  </tr>
@@ -380,24 +380,21 @@ $(document).ready(function(){initNavTree('bmqt__queueoptions_8h_source.html','')
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="namespaceBloombergLP_1_1bmqt.html#a43efb484cb847f69bb4fd53a463657a6">  354</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespaceBloombergLP_1_1bmqt.html#aa6566ff0a88bbcebb2d322152cd3472b">bmqt::operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html">bmqt::QueueOptions</a>&amp; lhs,</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                             <span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html">bmqt::QueueOptions</a>&amp; rhs)</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>{</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordflow">return</span> lhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a3009e9361820da77f1a7bb0e2a1d7ba2">maxUnconfirmedMessages</a>() != rhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a3009e9361820da77f1a7bb0e2a1d7ba2">maxUnconfirmedMessages</a>() ||</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>           lhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a37414a16285d08dcc625ec4b6ecf3efb">maxUnconfirmedBytes</a>() != rhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a37414a16285d08dcc625ec4b6ecf3efb">maxUnconfirmedBytes</a>() ||</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>           lhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a947f3c5fc040ee2a1c7024d766e70a95">consumerPriority</a>() != rhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a947f3c5fc040ee2a1c7024d766e70a95">consumerPriority</a>() ||</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>           lhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a4e43bd96efcf5173972492321e67d164">suspendsOnBadHostHealth</a>() != rhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a4e43bd96efcf5173972492321e67d164">suspendsOnBadHostHealth</a>();</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>}</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>}</div>
 </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="foldopen" id="foldopen00363" data-start="{" data-end="}">
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="namespaceBloombergLP_1_1bmqt.html#afa10d17e9495999db04146c7e7d26877">  363</a></span><span class="keyword">inline</span> bsl::ostream&amp; <a class="code hl_function" href="namespaceBloombergLP_1_1bmqt.html#a834a83fe28fd4313012e27be2f7bf732">bmqt::operator&lt;&lt;</a>(bsl::ostream&amp;             stream,</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                                      <span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html">bmqt::QueueOptions</a>&amp; rhs)</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>{</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordflow">return</span> rhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a04d4870aedc56125fcff47d2fc6a1184">print</a>(stream, 0, -1);</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>}</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="foldopen" id="foldopen00360" data-start="{" data-end="}">
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="namespaceBloombergLP_1_1bmqt.html#afa10d17e9495999db04146c7e7d26877">  360</a></span><span class="keyword">inline</span> bsl::ostream&amp; <a class="code hl_function" href="namespaceBloombergLP_1_1bmqt.html#a834a83fe28fd4313012e27be2f7bf732">bmqt::operator&lt;&lt;</a>(bsl::ostream&amp;             stream,</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                                      <span class="keyword">const</span> <a class="code hl_class" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html">bmqt::QueueOptions</a>&amp; rhs)</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>{</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <span class="keywordflow">return</span> rhs.<a class="code hl_function" href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a04d4870aedc56125fcff47d2fc6a1184">print</a>(stream, 0, -1);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>}</div>
 </div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>}  <span class="comment">// close enterprise namespace</span></div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}  <span class="comment">// close enterprise namespace</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="abmqt__subscription_8h_html"><div class="ttname"><a href="bmqt__subscription_8h.html">bmqt_subscription.h</a></div><div class="ttdoc">Provide a value-semantic types for subscription related API.</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqt_1_1QueueOptions_html"><div class="ttname"><a href="classBloombergLP_1_1bmqt_1_1QueueOptions.html">BloombergLP::bmqt::QueueOptions</a></div><div class="ttdoc">Value-semantic type for options related to a queue.</div><div class="ttdef"><b>Definition</b> bmqt_queueoptions.h:66</div></div>
 <div class="ttc" id="aclassBloombergLP_1_1bmqt_1_1QueueOptions_html_a04d4870aedc56125fcff47d2fc6a1184"><div class="ttname"><a href="classBloombergLP_1_1bmqt_1_1QueueOptions.html#a04d4870aedc56125fcff47d2fc6a1184">BloombergLP::bmqt::QueueOptions::print</a></div><div class="ttdeci">bsl::ostream &amp; print(bsl::ostream &amp;stream, int level=0, int spacesPerLevel=4) const</div></div>
